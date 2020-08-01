@@ -1,0 +1,16 @@
+html{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+/*Nav Bar*/
+#mainNav{
+    background-image: url("D:\ADevP\Website DevPractice\AmaltheaFrontEnd\static\images\iitgn.jpg");
+    min-height: 380px;
+
+}
+
+.navbar{
+    background:transparent;
+}
