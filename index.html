@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amalthea 2020</title>
     <meta name = "author" content = "Reuben Devanesan">
@@ -11,26 +11,205 @@
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "static\css\custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="static\js\custom.js"></script>
 </head>
+
 <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="/" id ="Home" >Home</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu<i class="fas fa-bars" ></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" id ="About" href="/about" >About</a></li>
-                    <li class="nav-item"><a class="nav-link" id = "Projects" href="/projects" >Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" id= "Blogs" href="/blogs" >Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" id = "Contact" href="/contact" >Contact</a></li>
+    <header>
+        <nav class = "navbar navbar-expand-lg fixed-top navbar-dark">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Webinar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
+    <!-- Optional Jumbotron
+    <div class = "container-fluid" id = "home">
+        <img class = "bg-image" src = "static\images\iitgn.jpg" alt ="" >
+        <h1 class = "amltext">Amalthea 2020</h1>
+        <h2 class = "loc">IIT Gandhinagar</h2>
+        <img class = "loc-image" src= "static\images\loc.jpg " alt = "">                    
+        <h3 class = "fullloc1">Top View:</h3>
+        <h3 class = "fullloc2">Academic Block | IIT Gandhinagar</h3>
+    </div>-->
+
+    <!--Starting Background HomePage-->
+    <br>
+    <div class="firstPage" id="ToHomePage">
+        <div class="firstPageBgLayer1"></div>
+        <div class="firstPageBgLayer2"></div>
+        <div class="firstPageBgLayer3"></div>
+        <div class="firstPageBgLayer4"></div>   
+        <div class="firstPageBgLayer5">
+            <div class="Layer1" >
+                <div class="themeText">
+                    <span>CONNECT   COLLAB</span> <span>ORATE   CREATE</span>                              
+                </div>
+            </div>
+            <div class="Layer3" >
+                    <div class="iatscontent">
+                            IIT Gandhinagar<br>                            
+                            Annual Tech<br>
+                            Summit<br>
+                    </div>
+            </div>
+        </div>         
+        <div class="firstPageContent">
+            <div class="firstPageContentInnerResponsive">
+                    <div class="amlLogoContainer">
+                        <div class="amlLogo">
+                            <img src="static\images\aml_logo.png" class="amlImg">                
+                        </div>                                        
+                    </div>                                  
+                    <div class="amlText" >
+                        <div>
+                            <div class="firstShow bar"></div>
+                            <div class="firstShow" style="margin-left:0 !important;">A</div>                        
+                            <div class="firstShow">M</div>
+                            <div class="secondShow">A</div>
+                            <div class="firstShow">L</div>
+                            <div class="secondShow">T</div>
+                            <div class="secondShow">H</div>
+                            <div class="secondShow">E</div>
+                            <div class="secondShow">A</div>
+                            <div class="firstShow">&nbsp;'20</div>
+                            <div class="firstShow bar"></div>
+                        </div>                        
+                    </div>                                                                            
+                <div class="amlDateText">1-2 November</div> 
+            </div>
+        </div>       
+    </div>  
+
+    <!--Second Page Home Page-->
+    <br>
+    <div class="secondPage" id="ToAboutPage">
+        <div class="secondPageContainer">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box1"   data-aos="fade-up"  data-aos-duration="1600">
+                                <div class="titleTheme">
+                                        Our Vision
+                                    <div class="underLine"></div>
+                                </div>
+                                <br>
+                                <div>
+                                    Fostering innovation and creative thinking by providing a platform for people to share their thoughts and exhibit their ideas.
+                                    <hr />
+                                    Providing an interface between the industry and academia to connect and discuss pivotal technological prospects.
+                                    <hr />
+                                    Inspiring young minds to ponder upon currently existing problems and look for innovative and feasible solutions.
+                                    
+                                </div>    
+                            </div>                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="iitgnats"  data-aos="fade-up"  data-aos-duration="1600" >  
+                                <span>
+                                        Witness<br>                                    
+                                </span>        
+                                <div class="underLine"></div>                            
+                                <span>
+                                    India's First Student<br>Run Tech Summit                                    
+                                </span>                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row flexMarginTop">
+                        <div class="col-md-6">
+                                <div class="decennialImg"  data-aos="fade-up"  data-aos-duration="1600">
+                                    <img src="static\images\2020_pandemic_2.jpg">
+                                </div>
+                        </div>    
+                        <div class="col-md-6">
+                            <div class="box2" data-aos="fade-up"  data-aos-duration="1600">                                
+                                <div class="titleTheme">
+                                        The Pandemic Year
+                                    <div class="underLine"></div>
+                                </div>
+                                <br>
+                                <div>
+                                    2020 has been marred by the COVID-19 pandemic. World is in a grave situation and we need to use technology to connect with others and fight this pandemic. As with any event a lot has changed over the last eleven years. It has continuously evolved and got bigger and better. So we bring an edition of Amalthea never seen before! An Online Amalthea! However, the one thing that has remained constant is the vision. The vision of Amalthea is the essence of it. It defines what it is and what it strives to become. Each member tries to acknowledge these points while working in it. Amalthea'20 will be a significant landmark in its history.  
+                                </div>
+                            </div>    
+                        </div>                
+                    </div>
+                </div>
+        </div>        
+        <div class="secondPageDesigns">
+            <div class="Layer0"></div>
+            <div class="Layer1"></div>
+            <div class="Layer2"></div>
+        </div>
+    </div>
+
+    <!--Third Page Home Page-->
+    <div class="thirdPage" id="ToThemePage">
+        <div class="thirdPageOuterContainer" id="pp">            
+            <div class="thirdPageContainer">                
+                <div class="container">
+                        <div class="row flexMarginTop2">                            
+                            <div class="col-md-12">
+                                <div  data-aos="fade-right"  data-aos-duration="2000">
+                                        <div class="titleTheme2">
+                                                With the theme
+                                            <!--<div class="underLine"></div>-->
+                                        </div>
+                                        <br>
+                                        <div class="actualThemeTitle">Connect Collaborate Create</div>     
+                                        <div class="titleTheme2">
+                                                <!--<div class="underLine"></div>-->
+                                            2020                                            
+                                        </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="row flexMarginTop2">                                
+                                <div class="col-md-8">
+                                    <div  data-aos="fade-right"  data-aos-duration="2000">
+                                           <div class="box3">
+                                               About the theme<br>
+                                               We have witnessed exponential growth in the development of technology and its applications in the past few decades. This development has surpassed the human imagination. Currently, we are in the midst of a pandemic which has engulfed the entire world and led to countless deaths. In this time of pandemic, we are forced to stay apart. We all are locked at our homes without our friends. The theme "Connect Collaborate Create" is brought up with an idea to connect our hearts, collaborate our efforts and create an unprecedented Amalthea amidst this pandemic.
+                                            </div>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-4">
+    
+                                </div>
+                            </div>
+                </div>
+                <br><br><br><br>
+            </div>
+            
+        </div>
+        <div class="thirdPageDesigns">            
+            <div class="Layer0"></div>
+            <div class="Layer1"></div>
+            <div class="Layer2"></div>
+        </div>        
+    </div>
+    <div class="resFlex"></div>
+
+    <!--Fourth Page Home Page-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
