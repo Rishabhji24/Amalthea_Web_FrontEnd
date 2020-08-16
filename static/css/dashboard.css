@@ -83,7 +83,7 @@ font-size: .75rem;
 text-transform: uppercase;
 }
 
-/* Handle */
+/* Handle */ 
 ::-webkit-scrollbar {
     width: 5px;
   }
