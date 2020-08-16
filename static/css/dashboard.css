@@ -83,6 +83,24 @@ font-size: .75rem;
 text-transform: uppercase;
 }
 
+/* Handle */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track-piece{
+    background-color:transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:#454B69;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:#3E435E; 
+  }
+
 /*Dashboard content*/
 [role="main"] {
     padding-top: 48px; /* Space for fixed navbar */
