@@ -1,6 +1,6 @@
 /*Everything from Amalthea 19 website with a few modifications.*/
 
-html body{
+html, body, .site{
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
