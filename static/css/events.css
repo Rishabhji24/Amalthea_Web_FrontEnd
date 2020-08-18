@@ -430,6 +430,42 @@ div.eventbox{
 }
 
 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+  } 
+  
+  /*Gallery*/
+  h1.galleryheader{
+    font-weight:600;
+    text-align: center;
+    font-size: 4vw;
+    color: darkblue;
+    text-decoration: underline;
+  }
+  
+  .carousel{
+    background:  #ECF5FF;
+    margin-top: 20px;
+    color: darkblue;
+  }
+  .carousel-item{
+    text-align: center;
+    min-height: 280px; 
+    color: darkblue;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next{
+    color:darkblue;
+  }
+
+
+
 /*Last Page Footer*/
 .lastPage {
     background: #2658C4;
