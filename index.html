@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
+                            <a class="nav-link" href="events.html">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Webinar</a>
@@ -68,6 +68,7 @@
                         <span>CONNECT   COLLAB</span> <span>ORATE   CREATE</span>                              
                     </div>
                 </div>
+                <div class="Layer2" ></div>
                 <div class="Layer3" >
                         <div class="iatscontent">
                                 IIT Gandhinagar<br>                            
@@ -98,10 +99,28 @@
                                 <div class="firstShow bar"></div>
                             </div>                        
                         </div>                                                                            
-                    <div class="amlDateText">1-2 November</div> 
+                    <!--<div class="amlDateText">1-2 November</div>--> 
                 </div>
             </div>       
         </div>  
+
+        <script type = "text/javascript">
+            $(document).on("scroll", function () {
+            var pageTop = $(document).scrollTop()
+            var pageBottom = pageTop + $(window).height()
+            var tags = $("section")
+    
+            for (var i = 0; i < tags.length; i++) {
+            var tag = tags[i]
+    
+            if ($(tag).position().top < pageBottom) {
+            $(tag).addClass("visible")
+            } else {
+            $(tag).removeClass("visible")
+            }
+            }
+            })
+        </script>
 
         <!--Second Page Home Page-->
         <br>
