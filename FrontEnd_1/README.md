@@ -2,4 +2,4 @@
 
 Front end of Amalthea 2020 website. Design based on Amalthea'19 website.
 
-Website: https://reuben27.github.io/Amalthea_Web_FrontEnd/
+Website: https://reuben27.github.io/Amalthea_Web_FrontEnd/FrontEnd_1/
