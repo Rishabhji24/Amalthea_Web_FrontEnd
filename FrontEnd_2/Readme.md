@@ -1,3 +1,3 @@
-#Amalthea 2020 Website
+# Amalthea 2020 Website
 
 Based on Hrushti Naik's Design.
