@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amalthea 2020</title>
+    <meta name = "author" content = "Reuben Devanesan, B.Tech Chemical Engineering">
+    <meta name = "description" value = "Amalthea is the Annual Tech Summit of IIT Gandhinagar.">
+    <link rel = "icon" href = "static\images\Amalthea_title_logo.png">
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "static\css\dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Arvo Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!--Montserrat Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Karla Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!--Roboto Font-->
+    <script src="https://kit.fontawesome.com/9d7cc8090d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "site"> <!--Done for responsivesness cause a mobile ignores the css for the body tags-->
+        <!--Navbar-->
+        <header>
+            <nav class = "navbar navbar-expand fixed-top navbar-dark"> <!--navbar expand so that it never becomes vertical-->
+                <a class="navbar-brand" href="index.html"> 
+                    <img src = "static\images\aml_logo.png" width = "30px" height = "48px" alt = "">
+                </a>                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id = "nav-item-events" href="#Events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id = "nav-item-webinar" href="#Webinar">Webinar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id = "nav-item-contact" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id = "nav-item-login" href="">Login</a>
+                    </li>
+                </ul>                
+            </nav>
+        </header> 
+        <div class = "h-line"></div>
+
+        <!--Account Info-->
+        <br>
+        <div class = "Account">
+            <h1 class = "Account-heading">Account</h1>
+            <div class = "container-fluid">
+                <div class = "row">
+                    <img class = "rounded-circle Account-photo" src = "static\images\default.jpg" alt = "">
+                    <div class = "vl-account"></div>                
+                    <div class = "Account-Info">
+                        <h2>Name : Reuben Shibu Devanesan</h2>
+                        <h2>Email : reuben.sd@iitgn.ac.in</h2>
+                        <h2>Institute : IIT Gandhinagar</h2>   
+                    </div>                              
+                </div>
+            </div>
+        </div>
+
+        <!--Registered Events-->
+        <br>
+        <div class = "Events" id = "Events">
+            <h1 class = "Event-heading">Registered Events</h1>
+            <div class = "container-fluid">
+                <div class = "row"> <!--First Registered Event-->
+                    <div class = "col-sm-9 col-md-10 EventNameTime">
+                        <div class = "row EventRow">
+                            <div class = "EventName">Event One</div>
+                            <div class = "EventTime">21:00 November 3</div>
+                        </div>
+                    </div>
+                    <div class = "col-sm-3 col-md-2 Rulebook"> Rulebook  </div>
+                </div>
+                <br>
+                <div class = "row"> <!--Second Registered Event-->
+                    <div class = "col-sm-9 col-md-10 EventNameTime">
+                        <div class = "row EventRow">
+                            <div class = "EventName">Event Two</div>
+                            <div class = "EventTime">11:00 December 25</div>
+                        </div>
+                    </div>
+                    <div class = "col-sm-3 col-md-2 Rulebook"> Rulebook  </div>
+                </div>
+            </div>
+            <br>
+            <div class = "vl"></div>
+        </div>
+
+        <!--Webinars-->
+        <br>
+        <div class = "Webinar" id = "Webinar">
+            <h1 class = "Webinar-heading">Webinar</h1>
+            <br>
+            <div class = "vl"></div>
+        </div>
+
+        <!--Notifications-->
+        <br>
+        <div class = "Notifications" id = "Notifications">
+            <h1 class = "Notifications-heading">Notifications</h1>
+        </div>
+
+        <!--Footer-->
+        <br>
+        <div class = "h-line"></div>
+        <footer>
+            <div class = "Footer" id = "Contact">
+                <div class = "row">
+                    <div class = "col-lg-4 col-sm-6">
+                        <h2 class = "Footer-text">Amalthea 2020</h3>
+                        <ul class="social-network social-circle">
+                            <li><a href="https://www.facebook.com/amalthea.iitgn/" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/amalthea-iit-gandhinagar/?originalSubdomain=in" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/AmaltheaIITGn" class="icoYoutube" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/amalthea_iitgn/" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/amalthea_iitgn?lang=en" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        </ul>				
+                    </div>
+                    <div class = "col-lg-8 col-sm-6">
+                        <div class = "row" id = "Email-Phone">
+                            <div class = "col">
+                                <a href = "" class = "Email" target = "_blank"><i class="far fa-envelope fa-3x"></i></a>
+                                <a href = "" class = "Email-text" target = "_blank">&nbsp;amalthea@iitgn.ac.in</a>
+                            </div>
+                            <div class = "col">
+                                <a href = "" class = "Phone" target = "_blank"><i class="fas fa-mobile-alt fa-3x"></i></a>
+                                <a href = "" class = "Phone-text" target = "_blank">&nbsp;Download our app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <br>
+                <br>            
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
