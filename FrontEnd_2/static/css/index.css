@@ -93,9 +93,10 @@ h1.About-heading{
     font-weight: bold;
     color: #1685f8;
     font-size: 50px;
+    text-align: center;
 }
 
-p.About-text{
+div.About-text{
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 18px;
@@ -116,11 +117,12 @@ div.Events{
 h1.Event-heading{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    color: #00c2ba;
+    color: #ff1493;
     font-size: 50px;
+    text-align: center;
 }
 
-p.Event-text{
+div.Event-text{
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 18px;
@@ -129,7 +131,7 @@ p.Event-text{
 
 img.event-image{
     width: 100%;
-    height: 100%;
+    height: 25vh;
 }
 
 /*Webinar*/
@@ -141,15 +143,83 @@ div.Webinar{
 h1.Webinar-heading{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    color: #ff1493;
+    color: #00c2ba;
     font-size: 50px;
+    text-align: center;
 }
 
-p.Webinar-text{
+div.Webinar-text{
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 18px;
     color: #0c0f12;
+}
+
+/*Instagram Feed*/
+div.Insta{
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+}
+
+h1.Insta-heading{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    color: #007bff;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Testimonials*/
+div.Testimonial{
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+}
+
+h1.Testimonial-heading{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    color: #0d98ba;
+    font-size: 50px;
+    text-align: center;
+}
+
+.personInfo {
+    padding:25px 10px !important;    
+    color:#000;
+    background: #FFF !important;
+    border:1px solid #0d98ba; 
+    text-align: center;
+    margin:0px 3px;
+    font-size:12pt;
+  }
+  
+.personInfo .quote {
+    margin-top:4vh;   
+}
+
+.personInfo .name {
+    margin-top:4vh;   
+}
+
+.testimonials {
+    text-align: center;
+    font-size: 2.5vw;
+    color:#454B69;
+}
+
+.testimonials i {
+    background: #fff;
+    padding:15px;
+    border-radius: 100%;
+    border:1px solid #454B69;
+}
+
+.testimonials .underLine {
+    width: 10vh;
+    margin-left:50%;
+    margin-top:5px;
+    background:#454B69; 
+    height: 5px;
 }
 
 /*Footer*/
