@@ -321,9 +321,49 @@ a.Phone-text{
     text-align: center;
 }
 
-
 @media only screen and (max-width: 777px) {
     #Social, #Email, #App{
-        padding-left: 15vw;
+        padding-left: 20vw;
     }
+
+    a.Email{
+        position: relative;
+    }
+
+    a.Email-text{
+        position: absolute;
+        top: 20%;
+        left: auto;
+    }
+
+    a.Phone{
+        position: relative;
+    }
+
+    a.Phone-text{
+        position: absolute;
+        top: 20%;
+        left: auto;
+    }
+}
+
+@media only screen and (min-width: 888px) {
+    a.Email{
+        position: relative;
+    }
+    a.Email-text{
+        position: absolute;
+        top: 5%;
+        left: auto;
+    }
+
+    a.Phone{
+        position: relative;
+    }
+    a.Phone-text{
+        position: absolute;
+        top: 6%;
+        left: auto;
+    }
+
 }
