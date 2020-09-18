@@ -28,16 +28,16 @@
                 </a>                
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" id = "nav-item-events" href="#Events">Events</a>
+                        <a class="nav-link" id = "nav-item-events" href = "#Events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id = "nav-item-webinar" href="#Webinar">Webinar</a>
+                        <a class="nav-link" id = "nav-item-webinar" href = "#Webinar">Webinar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id = "nav-item-contact" href="#Contact">Contact</a>
+                        <a class="nav-link" id = "nav-item-contact" href = "#Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id = "nav-item-login" href="dashboard.html">Dashboard</a>
+                        <a class="nav-link" id = "nav-item-login" href = "dashboard.html">Dashboard</a>
                     </li>
                 </ul>                
             </nav>
@@ -45,7 +45,12 @@
 
         <!--Theme-->
         <div class = "Theme">
-            <br>           
+            <br> 
+            <div class = "loopingvideo">
+                <video id = "myVideo" muted autoplay> 
+                    <source src = "main-start.mp4" id = "mp4Source" type="video/mp4">
+                </video>
+            </div>          
             <div class = "Theme-Text">
                 <h1 class="aml2020-text">AMALTHEA 2020</h1>
                 <h1>connect.</h1>
@@ -54,6 +59,22 @@
             </div>
         </div>
         <div class = "h-line"></div>
+
+        <!--JavaScript for playing main-loop after main-start-->
+        <script type = "text/javascript">
+            var player = document.getElementById('myVideo');
+            var mp4Vid = document.getElementById('mp4Source');
+            player.addEventListener('ended', myHandler, false);
+            function myHandler(e) {
+                if(!e){
+                    e = window.event;
+                }
+                $(mp4Vid).attr('src', 'main-loop.mp4');
+                player.setAttribute('loop')
+                player.load();
+                player.play();
+            }
+        </script>
         
         <!--About Theme-->
         <br><br>
@@ -70,37 +91,43 @@
         <br>
         <div class = "Events" id = "Events">
             <h1 class = "Event-heading">Events</h1>
-            <div class = "Event-text">Amalthea organises an extensive lineup of events, ranging from technical to general knowledge fields. Each event is unique and presents a different set of challenges. Students from all over the country compete to win these.</div>
+            <div class = "Event-text">Amalthea events are a platform for minds across the nation to showcase their talents in a wide variety of fields. Whether one is looking to add something to their skill set, an amateur wanting to brush up his art, or an expert looking to test his skills against the brightest minds of the nation, our events serve them all. Amalthea has a rich tradtion of events which recieve international participation. In this edition, Amalthea events are going to held completely online.</div>
             <br> <!--Row 1-->
             <div class = "row">
+                <!--CryptoRush-->
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
                         <img src = "static\images\cryptorush.png" class = "event-image" alt = "">
                         <div>
                             CryptoRush is a cryptocurrency trading event, which lets participants learn and apply their trading skills in a virtual marketplace against many other participants<br>                                   
-                            <a href = "cryptorush.html" target = "_blank" class="">Know more</a>        
+                            <a href = "cryptorush.html" target = "_blank" class=""  >Know more</a>        
+                            <br>
                         </div>
                     </div>
                 </div>
+                <!--Electronica-->
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
                         <img src = "static\images\electronica_logo.png" class = "event-image" alt = "">
                         <div>
                             A contest which will test your knowledge of the fundamentals of electronics. A contest for all electrical enthusiasts!<br>                                   
-                            <a href = "electronica.html" target = "_blank" class="">Know more</a>        
+                            <a href = "electronica.html" target = "_blank" class=""  >Know more</a>    
+                            <br>    
                         </div>
                     </div>
-                </div>       
+                </div>     
+                <!--Dcode-->  
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
                         <img src = "static\images\Dcode_logo.png" class = "event-image" alt = "">
                         <div>
                             A competitve programming contest hosted on codechef whih bring new and innovative problem to test your algorithmic skills<br>                                   
-                            <a href = "dcode.html" target = "_blank" class="">Know more</a>        
+                            <a href = "dcode.html" target = "_blank" class=""  >Know more</a>   
+                            <br>     
                         </div>
                     </div>
                 </div>
-                <br>   <!--Row 2-->  
+                <!-- Game Jam not yet released.
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
                         <img src = "static\images\Gamejam.png" class = "event-image" alt = "">
@@ -110,21 +137,28 @@
                         </div>
                     </div>
                 </div>
+                -->
+                <!--Cryptix-->
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
+                        <br>
                         <img src = "static\images\Cryptix_logo.png" class = "event-image" alt = "">
                         <div>
-                            CryptixCTF is jeopardy-style Capture The Flag(CTF) event, which introduces beginners to the domain of security while testing the veterans.<br>                                   
-                            <a href = "cryptix.html" target = "_blank" class="">Know more</a>        
+                            Cryptix is jeopardy-style Capture The Flag (CTF) event, which introduces beginners to the domain of security while testing the veterans.<br>                                   
+                            <a href = "cryptix.html" target = "_blank" class=""  >Know more</a> 
+                            <br>       
                         </div>
                     </div>
                 </div>
+                <!--QuickWit-->
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
-                        <img src = "static\images\quickwitlogo.jpg" class = "event-image" alt = "">
+                        <br>
+                        <img src = "static\images\quickwitlogo.png" class = "event-image" alt = "">
                         <div>
                             An informal quizzing event conducted on the Amalthea Instagram handle. Tests your knowledge.<br>                                   
-                            <a href = "quickwit.html" target = "_blank" class="">Know more</a>        
+                            <a href = "quickwit.html" target = "_blank" class=""  >Know more</a> 
+                            <br>       
                         </div>
                     </div>
                 </div>
@@ -135,10 +169,12 @@
 
         <!--Webinars-->
         <br>
-        <br>
         <div class = "Webinar" id = "Webinar">
             <h1 class = "Webinar-heading">Webinar</h1>
-            <div class = "Webinar-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class = "Webinar-text">
+                Since its inception 11 years ago, the Conclave has been one of the pillars of Amalthea. This year, Conclave talks will be organized virtually in form of Webinars. The Webinars aim to spread ideas, foster innovation, inquisition and creativity among the masses. They will be organised on a range of techno-managerial fields, current affairs, cutting-edge high impact research and entrepreneurship.
+                The Webinars will host speakers, visionaries, and leaders who will spread knowledge, provide insights, and discuss solutions. The talks will also facilitate interaction between audiences all over the country and the eminent speakers. Thus, going by this year’s theme, the Webinars will serve as a means to “Connect, Collaborate, and Create” for participants. 
+            </div>
         </div>
 
         <!--Instagram Feed-->

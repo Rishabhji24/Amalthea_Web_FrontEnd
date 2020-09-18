@@ -64,14 +64,21 @@ div.Spacing{
 
 /*Theme*/
 div.Theme{
-    /*padding-left: 5.5vw;*/
-    /*padding-top: 8vw;
-    /*padding-bottom: 8vw; */
-    height: 79vh;
+    height: 80vh;
     background: #161616;
 }
 
+div.loopingvideo{
+    position: absolute;
+    left: 20vw;
+}
+
+video{
+    height: 75vh;
+}
+
 div.Theme-Text {
+    position: relative;
     padding-left: 5.5vw;
     padding-top: 20vh;
     padding-bottom: 20vh;
@@ -87,6 +94,22 @@ div.Theme-Text h1{
 
 div.Theme-Text h1.aml2020-text {
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 777px) {
+    div.Theme{
+        height: 60vh;
+    }
+
+    div.Theme-Text {
+        padding-left: 5.5vw;
+        padding-top: 8vh;
+        padding-bottom: 4vh;
+    }
+
+    video{
+        height: 0;
+    }
 }
 
 div.h-line{
@@ -426,5 +449,4 @@ a.Phone-text{
         top: 6%;
         left: auto;
     }
-
 }
