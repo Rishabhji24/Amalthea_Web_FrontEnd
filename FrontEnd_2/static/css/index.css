@@ -74,7 +74,7 @@ div.loopingvideo{
 }
 
 video{
-    height: 75vh;
+    height: 76.5vh;
 }
 
 div.Theme-Text {
@@ -115,19 +115,6 @@ div.Theme-Text h1.aml2020-text {
 div.h-line{
     background: #f747d0;
     height: 7px;
-}
-
-/*For each and every particular event page*/
-img.CryptoRush-Image{
-    padding-left: 25%;
-    width: 75vw;
-}
-
-@media only screen and (max-width: 666px) {
-    img.CryptoRush-Image{
-        width: 90vw;
-        padding-left: 10vw;
-    }
 }
 
 /*About*/
@@ -410,6 +397,10 @@ a.Phone-text{
         padding-left: 20vw;
     }
 
+    #Email, #App{
+        padding-top: 4vw;
+    }
+
     a.Email{
         position: relative;
     }
@@ -432,12 +423,16 @@ a.Phone-text{
 }
 
 @media only screen and (min-width: 888px) {
+    #Email, #App{
+        padding-top: 3.5vh;
+    }
+
     a.Email{
         position: relative;
     }
     a.Email-text{
         position: absolute;
-        top: 5%;
+        top: 34%;
         left: auto;
     }
 
@@ -446,7 +441,7 @@ a.Phone-text{
     }
     a.Phone-text{
         position: absolute;
-        top: 6%;
+        top: 35%;
         left: auto;
     }
 }

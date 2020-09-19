@@ -10,8 +10,8 @@
     <link rel = "icon" href = "static\images\Amalthea_title_logo.png">
     <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "static\css\index.css">
+    <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Arvo Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!--Montserrat Font-->
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!--Karla Font-->
@@ -28,10 +28,10 @@
                 </a>                
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" id = "nav-item-events" href = "#Events">Events</a>
+                        <a class="nav-link" id = "nav-item-events" href = "#Eventssection">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id = "nav-item-webinar" href = "#Webinar">Webinar</a>
+                        <a class="nav-link" id = "nav-item-webinar" href = "#Webinarsection">Webinar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id = "nav-item-contact" href = "#Contact">Contact</a>
@@ -60,22 +60,6 @@
         </div>
         <div class = "h-line"></div>
 
-        <!--JavaScript for playing main-loop after main-start-->
-        <script type = "text/javascript">
-            var player = document.getElementById('myVideo');
-            var mp4Vid = document.getElementById('mp4Source');
-            player.addEventListener('ended', myHandler, false);
-            function myHandler(e) {
-                if(!e){
-                    e = window.event;
-                }
-                $(mp4Vid).attr('src', 'main-loop.mp4');
-                player.setAttribute('loop')
-                player.load();
-                player.play();
-            }
-        </script>
-        
         <!--About Theme-->
         <br><br>
         <div class = "About">
@@ -87,6 +71,7 @@
         </div>
 
         <!--Events-->
+        <div id = "Eventssection"></div>
         <br>
         <br>
         <div class = "Events" id = "Events">
@@ -100,7 +85,7 @@
                         <img src = "static\images\cryptorush.png" class = "event-image" alt = "">
                         <div>
                             CryptoRush is a cryptocurrency trading event, which lets participants learn and apply their trading skills in a virtual marketplace against many other participants<br>                                   
-                            <a href = "cryptorush.html" target = "_blank" class=""  >Know more</a>        
+                            <a href = "events\cryptorush.html" target = "_blank" class=""  >Know more</a>        
                             <br>
                         </div>
                     </div>
@@ -111,7 +96,7 @@
                         <img src = "static\images\electronica_logo.png" class = "event-image" alt = "">
                         <div>
                             A contest which will test your knowledge of the fundamentals of electronics. A contest for all electrical enthusiasts!<br>                                   
-                            <a href = "electronica.html" target = "_blank" class=""  >Know more</a>    
+                            <a href = "events\electronica.html" target = "_blank" class=""  >Know more</a>    
                             <br>    
                         </div>
                     </div>
@@ -122,7 +107,7 @@
                         <img src = "static\images\Dcode_logo.png" class = "event-image" alt = "">
                         <div>
                             A competitve programming contest hosted on codechef whih bring new and innovative problem to test your algorithmic skills<br>                                   
-                            <a href = "dcode.html" target = "_blank" class=""  >Know more</a>   
+                            <a href = "events\dcode.html" target = "_blank" class=""  >Know more</a>   
                             <br>     
                         </div>
                     </div>
@@ -133,7 +118,7 @@
                         <img src = "static\images\Gamejam.png" class = "event-image" alt = "">
                         <div>
                             A welcome place for all game jammers where you would have to submit a game made from scratch after a week of toiling and brainstorming to get the bets out.<br>                                   
-                            <a href = "gamejam.html" target = "_blank" class="">Know more</a>        
+                            <a href = "events\gamejam.html" target = "_blank" class="">Know more</a>        
                         </div>
                     </div>
                 </div>
@@ -145,7 +130,7 @@
                         <img src = "static\images\Cryptix_logo.png" class = "event-image" alt = "">
                         <div>
                             Cryptix is jeopardy-style Capture The Flag (CTF) event, which introduces beginners to the domain of security while testing the veterans.<br>                                   
-                            <a href = "cryptix.html" target = "_blank" class=""  >Know more</a> 
+                            <a href = "events\cryptix.html" target = "_blank" class=""  >Know more</a> 
                             <br>       
                         </div>
                     </div>
@@ -157,7 +142,7 @@
                         <img src = "static\images\quickwitlogo.png" class = "event-image" alt = "">
                         <div>
                             An informal quizzing event conducted on the Amalthea Instagram handle. Tests your knowledge.<br>                                   
-                            <a href = "quickwit.html" target = "_blank" class=""  >Know more</a> 
+                            <a href = "events\quickwit.html" target = "_blank" class=""  >Know more</a> 
                             <br>       
                         </div>
                     </div>
@@ -168,6 +153,7 @@
         </div>
 
         <!--Webinars-->
+        <div id = "Webinarsection"></div>
         <br>
         <div class = "Webinar" id = "Webinar">
             <h1 class = "Webinar-heading">Webinar</h1>
@@ -248,8 +234,8 @@
         <br>
         <div class = "h-line"></div>
         <footer>
-            <div class = "Footer" id = "Contact">
-                <div class = "row">
+            <div class = "Footer">
+                <div class = "row" id = "Contact">
                     <div class = "col-lg-4 col-md-4 col-sm-12" id = "Social">
                         <h2 class = "Footer-text">Amalthea 2020</h3>
                         <ul class="social-network social-circle">
@@ -273,6 +259,14 @@
                 <br>            
             </div>
         </footer>
+
+        <!-- JavaScript-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148907672-1"></script>
+        <script src="static\js\custom.js"></script>
     </div>
 </body>
 </html>
