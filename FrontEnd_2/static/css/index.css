@@ -335,7 +335,7 @@ ul.social-network li {
     text-align: center;
     width: 35px;
     height: 35px;
-    font-size: 20px;
+    font-size: 21px;
     }
 
 .social-circle li i {
@@ -393,11 +393,12 @@ a.Phone-text{
 }
 
 @media only screen and (max-width: 777px) {
-    #Social, #Email, #App{
-        padding-left: 20vw;
+    #Social{
+        padding-left: 18vw;
     }
 
     #Email, #App{
+        padding-left: 25vw;
         padding-top: 4vw;
     }
 
