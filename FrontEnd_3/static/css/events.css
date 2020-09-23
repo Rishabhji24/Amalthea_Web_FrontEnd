@@ -1,0 +1,260 @@
+html, body, .site{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    max-width:100vw !important;
+    overflow-x: hidden !important;
+    text-align: justify;
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+nav.navbar{
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: larger;
+    background: #000000;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2vw;
+}
+
+.nav-item .nav-link{
+    font-size: 16px;
+}
+
+#nav-item-events{
+    color: #ff1493;
+}
+
+#nav-item-webinar{
+    color: #30d4ff;
+}
+
+#nav-item-contact{
+    color: #faeb2c;
+}
+
+#nav-item-login{
+    color: #c401ff;
+}
+
+div.Spacing{
+    height:50px;
+}
+
+/*Scrollbar Handle */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track-piece{
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#454B69;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#3E435E; 
+}
+
+/*Slideshow*/
+.mySlides1, .mySlides2 {
+    display: none
+}
+
+img.event-slides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+div.container-fluid{
+    padding: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 6px 6px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    background-color: hsl(226, 74%, 66%);
+    color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.animate-right{
+    position: relative;
+    animation: animateright 1s;
+}
+
+@keyframes animateright{
+    from{
+        right:-300px;
+        opacity:0
+    } 
+    to{
+        right:0;
+        opacity:1
+    }
+}
+
+.animate-left{
+    position:relative;
+    animation:animateleft 1s
+}
+    
+@keyframes animateleft{
+    from{
+        left:-300px;
+        opacity:0
+    } 
+    to
+    {
+        left:0;
+        opacity:1
+    }
+}
+
+/*Events*/
+/*Event Image*/
+div.Evento{
+    padding-left: 37.5vw;
+}
+img.event-image{
+    width: 25vw;
+}
+
+@media only screen and (max-width: 666px) {
+    img.event-image{
+        width: 80vw;
+    }
+    div.Evento{
+        padding-left: 10vw;
+    }
+}
+
+/*About*/
+div.About{
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+}
+
+h1.About-heading{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #1685f8;
+    font-size: 35px;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+div.About-text{
+    margin-top: 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #0c0f12;
+}
+
+div.vl{
+    border-left: 6px solid #f7f429;
+    height: 6vh;
+}
+
+/*Second*/
+div.Second{
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+}
+
+h1.Second-heading{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #ff1493;
+    font-size: 35px;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+div.Second-text{
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #0c0f12;
+}
+
+div.gapspacing{
+    padding-left: 5vw;
+    text-align: left;
+}
+
+/*Third*/
+div.Third{
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+}
+
+h1.Third-heading{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #00c2ba;
+    font-size: 35px;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+div.Third-text{
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #0c0f12; 
+}   
