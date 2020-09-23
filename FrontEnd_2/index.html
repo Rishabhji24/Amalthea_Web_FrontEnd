@@ -21,11 +21,11 @@
 <body>
     <div class = "site"> <!--Done for responsivesness cause a mobile ignores the css for the body tags-->
         <!--Navbar-->
-        <header>
-            <nav class = "navbar navbar-expand fixed-top navbar-dark"> <!--navbar expand so that it never becomes vertical-->
-                <a class="navbar-brand" href="index.html"> 
+        <!-- <header>
+            <nav class = "navbar navbar-expand fixed-top navbar-dark"> --><!--navbar expand so that it never becomes vertical-->
+              <!--  <a class="navbar-brand" href="index.html">
                     <img src = "static\images\logo.svg" width = "35px" height = "47px" alt = "">
-                </a>                
+                </a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" id = "nav-item-events" href = "#Eventssection">Events</a>
@@ -39,18 +39,47 @@
                     <li class="nav-item">
                         <a class="nav-link" id = "nav-item-login" href = "dashboard.html">Dashboard</a>
                     </li>
-                </ul>                
+                </ul>
             </nav>
-        </header> 
+        </header>  -->
+
+        <header>
+      <nav>
+        <div class="container">
+          <div id="hor-nav" class="row">
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <input id="img-btn" class="img-btn btn" type="image" src="static/images/aml_logo.png" name="" value="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn btn-primary nav-btn">Home</button>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn btn-primary nav-btn">Events</button>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn btn-primary nav-btn">Webinars</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn btn-primary nav-btn">Amalthea Project</button>
+            </div>
+            <!-- <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn btn-primary nav-btn">Login</button>
+            </div> -->
+          </div>
+        </div>
+
+      </nav>
+    </header>
+
 
         <!--Theme-->
         <div class = "Theme">
-            <br> 
+            <br>
             <div class = "loopingvideo">
-                <video id = "myVideo" muted autoplay> 
+                <video id = "myVideo" muted autoplay>
                     <source src = "main-start.mp4" id = "mp4Source" type="video/mp4">
                 </video>
-            </div>          
+            </div>
             <div class = "Theme-Text">
                 <h1 class="aml2020-text">AMALTHEA 2020</h1>
                 <h1>connect.</h1>
@@ -60,6 +89,25 @@
         </div>
         <div class = "h-line"></div>
 
+<<<<<<< Updated upstream
+=======
+        <!--JavaScript for playing main-loop after main-start-->
+        <script type = "text/javascript">
+            var player = document.getElementById('myVideo');
+            var mp4Vid = document.getElementById('mp4Source');
+            player.addEventListener('ended', myHandler, false);
+            function myHandler(e) {
+                if(!e){
+                    e = window.event;
+                }
+                $(mp4Vid).attr('src', 'main-loop.mp4');
+                player.setAttribute('loop')
+                player.load();
+                player.play();
+            }
+        </script>
+
+>>>>>>> Stashed changes
         <!--About Theme-->
         <br><br>
         <div class = "About">
@@ -84,8 +132,13 @@
                     <div class = "eventbox">
                         <img src = "static\images\cryptorush.png" class = "event-image" alt = "">
                         <div>
+<<<<<<< Updated upstream
                             CryptoRush is a cryptocurrency trading event, which lets participants learn and apply their trading skills in a virtual marketplace against many other participants<br>                                   
                             <a href = "events\cryptorush.html" target = "_blank" class=""  >Know more</a>        
+=======
+                            CryptoRush is a cryptocurrency trading event, which lets participants learn and apply their trading skills in a virtual marketplace against many other participants<br>
+                            <a href = "cryptorush.html" target = "_blank" class=""  >Know more</a>
+>>>>>>> Stashed changes
                             <br>
                         </div>
                     </div>
@@ -95,20 +148,32 @@
                     <div class = "eventbox">
                         <img src = "static\images\electronica_logo.png" class = "event-image" alt = "">
                         <div>
+<<<<<<< Updated upstream
                             A contest which will test your knowledge of the fundamentals of electronics. A contest for all electrical enthusiasts!<br>                                   
                             <a href = "events\electronica.html" target = "_blank" class=""  >Know more</a>    
                             <br>    
+=======
+                            A contest which will test your knowledge of the fundamentals of electronics. A contest for all electrical enthusiasts!<br>
+                            <a href = "electronica.html" target = "_blank" class=""  >Know more</a>
+                            <br>
+>>>>>>> Stashed changes
                         </div>
                     </div>
-                </div>     
-                <!--Dcode-->  
+                </div>
+                <!--Dcode-->
                 <div class = "col-md-4 col-sm-6 col-xs-12">
                     <div class = "eventbox">
                         <img src = "static\images\Dcode_logo.png" class = "event-image" alt = "">
                         <div>
+<<<<<<< Updated upstream
                             A competitve programming contest hosted on codechef whih bring new and innovative problem to test your algorithmic skills<br>                                   
                             <a href = "events\dcode.html" target = "_blank" class=""  >Know more</a>   
                             <br>     
+=======
+                            A competitve programming contest hosted on codechef whih bring new and innovative problem to test your algorithmic skills<br>
+                            <a href = "dcode.html" target = "_blank" class=""  >Know more</a>
+                            <br>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -117,8 +182,13 @@
                     <div class = "eventbox">
                         <img src = "static\images\Gamejam.png" class = "event-image" alt = "">
                         <div>
+<<<<<<< Updated upstream
                             A welcome place for all game jammers where you would have to submit a game made from scratch after a week of toiling and brainstorming to get the bets out.<br>                                   
                             <a href = "events\gamejam.html" target = "_blank" class="">Know more</a>        
+=======
+                            A welcome place for all game jammers where you would have to submit a game made from scratch after a week of toiling and brainstorming to get the bets out.<br>
+                            <a href = "gamejam.html" target = "_blank" class="">Know more</a>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -128,9 +198,15 @@
                     <div class = "eventbox">
                         <img src = "static\images\Cryptix_logo.png" class = "event-image" alt = "">
                         <div>
+<<<<<<< Updated upstream
                             Cryptix is jeopardy-style Capture The Flag (CTF) event, which introduces beginners to the domain of security while testing the veterans.<br>                                   
                             <a href = "events\cryptix.html" target = "_blank" class=""  >Know more</a> 
                             <br>       
+=======
+                            Cryptix is jeopardy-style Capture The Flag (CTF) event, which introduces beginners to the domain of security while testing the veterans.<br>
+                            <a href = "cryptix.html" target = "_blank" class=""  >Know more</a>
+                            <br>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -139,9 +215,15 @@
                     <div class = "eventbox">
                         <img src = "static\images\quickwitlogo.png" class = "event-image" alt = "">
                         <div>
+<<<<<<< Updated upstream
                             An informal quizzing event conducted on the Amalthea Instagram handle. Tests your knowledge.<br>                                   
                             <a href = "events\quickwit.html" target = "_blank" class=""  >Know more</a> 
                             <br>       
+=======
+                            An informal quizzing event conducted on the Amalthea Instagram handle. Tests your knowledge.<br>
+                            <a href = "quickwit.html" target = "_blank" class=""  >Know more</a>
+                            <br>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -187,7 +269,7 @@
         <div class = "Testimonial" id = "Testimonial">
             <h1 class = "Testimonial-heading"><i class="fa fa-quote-left" aria-hidden="true"></i></h1>
             <h1 class = "Testimonial-heading">Testimonials</h1>
-            <br> 
+            <br>
             <div class = "row">
                 <div class="col-md-4" style = "padding: 0;">
                     <div class="personInfo">
@@ -197,9 +279,9 @@
                         <div class="quote"> "Our students have been organising the technical summit Amalthea that has grown way beyond our expectations" </div>
                         <div class="name">
                                 <hr>
-                                <b>Dr. Sudhir K. Jain<br> Director, IIT Gandhinagar</b><br><br>  <br>   
+                                <b>Dr. Sudhir K. Jain<br> Director, IIT Gandhinagar</b><br><br>  <br>
                         </div>
-                    </div>                                      
+                    </div>
                 </div>
                 <div class="col-md-4" style = "padding: 0;">
                     <div class="personInfo" >
@@ -223,7 +305,7 @@
                                 <hr>
                                 <b>Dr. Anil Bhardwaj<br> Director of Space Physics Laboratory, ISRO, Thiruvananthapuram, India</b><br><br>
                         </div>
-                    </div>                                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,9 +324,9 @@
                             <li><a href="https://www.youtube.com/user/AmaltheaIITGn" class="icoYoutube" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
                             <li><a href="https://www.instagram.com/amalthea_iitgn/" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="https://twitter.com/amalthea_iitgn?lang=en" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        </ul>				
+                        </ul>
                     </div>
-                    <div class = "col-lg-4 col-md-4 col-sm-12" id = "Email">                            
+                    <div class = "col-lg-4 col-md-4 col-sm-12" id = "Email">
                         <a href = "" class = "Email" target = "_blank"><i class="far fa-envelope fa-2x"></i></a>
                         <a href = "" class = "Email-text" target = "_blank">&nbsp;amalthea@iitgn.ac.in</a>
                     </div>
@@ -252,9 +334,9 @@
                         <a href = "" class = "Phone" target = "_blank"><i class="fas fa-mobile-alt fa-2x"></i></a>
                         <a href = "" class = "Phone-text" target = "_blank">&nbsp;Download our app</a>
                     </div>
-                </div>    
+                </div>
                 <br>
-                <br>            
+                <br>
             </div>
         </footer>
 
@@ -266,5 +348,21 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148907672-1"></script>
         <script src="static\js\custom.js"></script>
     </div>
+    <script>
+      var i = 0;
+      document.getElementById("img-btn").onclick = function() {
+        i++;
+        if (i % 2 != 0) {
+          var nav = document.getElementById("hor-nav");
+          nav.style.width = "100%";
+          nav.style.height = "80%";
+        } else {
+          var nav = document.getElementById("hor-nav");
+          nav.style.width = "80px";
+          nav.style.height = "60px";
+        }
+      }
+    </script>
+
 </body>
 </html>
