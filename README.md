@@ -5,3 +5,5 @@ Front-End of the Amalthea 2020 website. Based on 2 different designs. First one 
 First one: https://reuben27.github.io/Amalthea_Web_FrontEnd/FrontEnd_1/
 
 Second one: https://reuben27.github.io/Amalthea_Web_FrontEnd/FrontEnd_2/
+
+Third one: https://reuben27.github.io/Amalthea_Web_FrontEnd/FrontEnd_3/
