@@ -9,39 +9,94 @@ html, body, .site{
 }
 
 /*Navbar*/
-nav.navbar{
+header {
+    position: fixed;
+    padding: 3%;
+    z-index: 1000;
+}
+  
+.fa-user {
+    color: blue;
+}
+  
+.login {
+    margin-left: 10%;
+}
+
+.fixed-top {
+    padding: 4%;
+}
+
+.nav-col {
+    margin: 10px;
+}
+
+.nav-btn {
     font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: larger;
-    background: #000000;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 2vw;
+    font-weight: bold;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    border-style: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    }
+
+.btn:hover {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
 }
 
-.nav-item .nav-link{
-    font-size: 16px;
+nav.navbar {
+    background: transparent !important;
+    padding-top: 2% !important;
+    padding-left: 6% !important;
+    width: 90%;
 }
 
-#nav-item-events{
-    color: #ff1493;
+.img-btn {
+    width: 40px;
+    padding: 5px;
+    border-radius: 100%;
 }
 
-#nav-item-webinar{
-    color: #30d4ff;
+#hor-nav{
+    padding: 0;
+    position: relative;
+    width: 80px;
+    height: 55px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    background: rgb(2,0,36);
+    background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(94,94,225,0.98) 29%, rgba(0,212,255,1) 100%);
+    border-radius: 30px;
+    margin-right: 0;
 }
 
-#nav-item-contact{
-    color: #faeb2c;
+.nav-btn:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
-#nav-item-login{
-    color: #c401ff;
+.nav-btn:hover:after {
+    width: 50%;
+    left: 25%;
 }
 
-div.Spacing{
-    height:50px;
-}
 
 /*Scrollbar Handle */
 ::-webkit-scrollbar {
