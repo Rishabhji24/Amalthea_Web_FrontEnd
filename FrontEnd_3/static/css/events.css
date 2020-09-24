@@ -3,7 +3,6 @@ html {
     padding: 0 !important;
     box-sizing: border-box;
     max-width:100vw !important;
-    overflow-x: initial !important;
     text-align: justify;
     scroll-behavior: smooth;
     line-height: 1.8rem;
@@ -15,6 +14,7 @@ body, .site {
     box-sizing: border-box;
     max-width:100vw !important;
     text-align: justify;
+    overflow-x: hidden !important;
     line-height: 1.8rem;
     background-color: #ECF4FF;
     }
