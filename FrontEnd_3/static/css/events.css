@@ -273,6 +273,7 @@ div.box1 {
     background: #fff;
     margin-left: 8vw;
     margin-right: 8vw;
+    border-radius: 15px;
 }
 
 h1.box-heading{
