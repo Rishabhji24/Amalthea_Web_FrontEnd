@@ -1,4 +1,4 @@
-html, body, .site{
+html {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
@@ -7,6 +7,15 @@ html, body, .site{
     text-align: justify;
     scroll-behavior: smooth;
     line-height: 1.8rem;
+}
+
+body, .site {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  max-width:100vw !important;
+  text-align: justify;
+  line-height: 1.8rem;
 }
 
 body, h1 {
