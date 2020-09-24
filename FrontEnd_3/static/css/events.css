@@ -478,6 +478,7 @@ ul.social-network li, ul.mail li {
         position: relative;
         left: 35vw;
         right:0;
+        word-spacing: 1.2rem;
     }
 
     .white {
