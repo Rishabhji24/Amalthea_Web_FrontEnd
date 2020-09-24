@@ -68,12 +68,18 @@ header {
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    outline-style: none;
     }
 
 .btn:hover {
     color: black;
     text-decoration: none;
     background-color: transparent;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
 nav.navbar {
