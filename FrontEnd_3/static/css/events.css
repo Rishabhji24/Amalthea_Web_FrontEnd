@@ -9,11 +9,11 @@ html {
     line-height: 1.8rem;
 }
 
-body, .site {
+body {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
-    max-width:100vw !important;
+    max-width: 100vw !important;
     text-align: justify;
     line-height: 1.8rem;
     background-color: #ECF4FF;
