@@ -452,6 +452,7 @@ ul.social-network li, ul.mail li {
         position: relative;
         left: 10vw;
         right:0;
+        color: black;
     }
 
     .bottom-right{
@@ -473,5 +474,10 @@ ul.social-network li, ul.mail li {
         position: relative;
         left: 35vw;
         right:0;
+    }
+
+    .white {
+      background-color: #000b76;
+      margin-top: -3px;;
     }
 }
