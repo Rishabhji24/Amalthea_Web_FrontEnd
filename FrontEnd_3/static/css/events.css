@@ -3,7 +3,7 @@ html {
     padding: 0 !important;
     box-sizing: border-box;
     max-width:100vw !important;
-    overflow-x: hidden !important;
+    overflow-x: initial !important;
     text-align: justify;
     scroll-behavior: smooth;
     line-height: 1.8rem;
@@ -16,6 +16,7 @@ body, .site {
     max-width:100vw !important;
     text-align: justify;
     line-height: 1.8rem;
+    background-color: #ECF4FF;
     }
 
 body, h1 {
@@ -281,9 +282,9 @@ div.container-fluid{
 }
 
 /*Events*/
-div.events-infoo{
+/* div.events-infoo{
     background-color: #ECF4FF;
-}
+} */
 
 div.box1 {
     padding: 25px;
@@ -395,7 +396,7 @@ ul.social-network li, ul.mail li {
 }
 
 .social-circle i {
-    color: black;
+    color: white;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -407,7 +408,7 @@ ul.social-network li, ul.mail li {
   position: absolute;
   bottom: 8vw;
   left: 15vw;
-  color: black;
+  color: white;
   font-weight: 500;
 }
 
@@ -421,7 +422,7 @@ ul.social-network li, ul.mail li {
   position: absolute;
   bottom: 8.5vw;
   right: 28vw;
-  color: black;
+  color: white;
   font-weight: 500;
 }
 
@@ -429,7 +430,7 @@ ul.social-network li, ul.mail li {
   position: absolute;
   bottom: 6.5vw;
   right: 20vw;
-  color: black;
+  color: white;
   font-weight: 500;
 }
 
