@@ -289,3 +289,131 @@ div.box-text{
     font-size: 16px;
     color: #0c0f12;
 }
+
+.footer {
+  position: relative;
+  width: 100vw;
+  height: 22vw;
+}
+
+ul.social-network, ul.mail {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li, ul.mail li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoYoutube:hover, .social-network a.email:hover {
+    background-color: #ff003a;
+}
+
+.social-network a.icoInstagram:hover {
+    background-color: #ff1493;
+}
+
+.social-network a.icoTwitter:hover, .social-network a.phone:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoTwitter:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #30d4ff;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    font-size: 21px;
+    }
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: black;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8vw;
+  left: 15vw;
+  color: black;
+  font-weight: 500;
+}
+
+.bottom-left-2 {
+  position: absolute;
+  bottom: 4vw;
+  left: 10vw;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8.5vw;
+  right: 28vw;
+  color: black;
+  font-weight: 500;
+}
+
+.bottom-right-2 {
+  position: absolute;
+  bottom: 6.5vw;
+  right: 20vw;
+  color: black;
+  font-weight: 500;
+}
+
+.bottom-right-3 {
+  position: absolute;
+  bottom: 3vw;
+  right: 1vw;
+}

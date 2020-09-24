@@ -1,179 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content = "width=device-width, minimum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Events | Amalthea 2020</title>
-    <meta name = "author" content = "Reuben Devanesan, B.Tech Chemical Engineering">
-    <meta name = "description" value = "Amalthea is the Annual Tech Summit of IIT Gandhinagar.">
-    <link rel = "icon" href = "static\images\Amalthea_title_logo.png">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href = "static\css\events.css">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> <!--Inter-->
-    <script src="https://kit.fontawesome.com/9d7cc8090d.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events | Amalthea 2020</title>
+  <meta name="author" content="Reuben Devanesan, B.Tech Chemical Engineering">
+  <meta name="description" value="Amalthea is the Annual Tech Summit of IIT Gandhinagar.">
+  <link rel="icon" href="static\images\Amalthea_title_logo.png">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static\css\events.css">
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!--Inter-->
+  <script src="https://kit.fontawesome.com/9d7cc8090d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class = "site"> <!--Done for responsivesness cause a mobile ignores the css for the body tags-->
-        <!--Navbar-->
-        <header>
-            <nav class = "navbar navbar-expand fixed-top">
-                <div class="container-fluid">
-                    <div id="hor-nav" class="row gradient">
-                        <div class="col-lg-1 col-md-4 col-sm-12 nav-col">
-                        <input id="img-btn" class="img-btn btn" type="image" src="static/images/logo_white.svg" name="" value="">
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
-                        <button type="button" class="btn nav-btn">Home</button>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
-                        <button type="button" class="btn nav-btn">Events</button>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
-                        <button type="button" class="btn nav-btn">Webinars</button>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-12 nav-col">
-                        <button type="button" class="btn nav-btn">Amalthea Project</button>
-                        </div>
-                        <!-- <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+  <div class="site">
+    <!--Done for responsivesness cause a mobile ignores the css for the body tags-->
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-expand fixed-top">
+        <div class="container-fluid">
+          <div id="hor-nav" class="row gradient">
+            <div class="col-lg-1 col-md-4 col-sm-12 nav-col">
+              <input id="img-btn" class="img-btn btn" type="image" src="static/images/logo_white.svg" name="" value="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn nav-btn">Home</button>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn nav-btn">Events</button>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn nav-btn">Webinars</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 nav-col">
+              <button type="button" class="btn nav-btn">Amalthea Project</button>
+            </div>
+            <!-- <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
                         <button type="button" class="btn btn-primary nav-btn">Login</button>
                         </div> -->
-                    </div>
-                </div>
-                <a class="login" href="#"><i class="far fa-user"></i></a>
-            </nav>
-        </header>
-
-        <br><br><br>
-        <!--Event Logos Slideshow-->
-        <div class = "container-fluid">
-            <div class="slideshow-container">
-                <div class="mySlides1">
-                    <img class = "event-slides" src="static/images/quickwitlogo.png">
-                </div>
-
-                <div class="mySlides1">
-                    <img class = "event-slides" src="static/images/cryptorush.png">
-                </div>
-
-                <div class="mySlides1">
-                    <img class = "event-slides" src="static/images/Dcode_logo.png">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
+          </div>
         </div>
-        <br>
+        <a class="login" href="#"><i class="far fa-user"></i></a>
+      </nav>
+    </header>
 
-        <div class = "container-fluid events-infoo">
-            <div class="slideshow-container">
-                <!--Quickwit-->
-                <div class="mySlides2">
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">About</h1>
-                        <div class = "row">
-                            <div class = "col-12 box-text">Quickwit is a short weekly online quiz conducted on our instagram handle <a href = "https://www.instagram.com/amalthea_iitgn/"> @amalthea_iitgn</a>.
-                                This quiz is conducted every Sunday at sharp 9pm having questions related to various fileds of science and technology.
-                                It appreciates your accuracy as well as quick response and the leaderboard gets updated every week.
-                                The top 10 contestents from the leaderboard get a shout out from our instagram handle every week.</div>
-                        </div>
-                    </div>
-                    <!--Leaderboard-->
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">Leaderboard</h1>
-                    </div>
-                    <!--Previous Weeks-->
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">Previous Weeks</h1>
-                    </div>
-                </div>
-
-                <!--Cryptorush-->
-                <div class="mySlides2">
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">About</h1>
-                        <div class = "row">
-                            <div class = "col-12 box-text">Cryptocurrency trading is a new speculation business that has gained significant boost after the government lifted the ban on cryptocurrencies in March 2020. CryptoRush, organised by Amalthea, brings forth a unique platform to test your mettle in Cryptocurrency trading without any risk of loosing money. Why not try out your speculation or luck on mock $50,000 that you'll be given to trade and make the best of it as if you were doing it in a real market!</div>
-                            <!--<div class = "col-md-4 About-video"></div>-->
-                        </div>
-                    </div>
-
-                    <!--Rules-->
-                    <br>
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">Participation</h1>
-                        <div class = "box-text">
-                            (i) There are no prerequisites for this competition, but knowlege of stock trading would definitely increase your chances of winning! <br>
-                            (ii) There is no participation fee. <br>
-                            (iii) The event is going to be held online on Roostoo application. The app (<b> Roostoo – Mock Crypto Trading </b>) can be downloaded from the links below: <br>
-                                <div class = "gapspacing" >For Android: <a href = "https://play.google.com/store/apps/details?id=com.roostoo.roostoo&hl=en_IN"> https://play.google.com/store/apps/details?id=com.roostoo.roostoo&hl=en_IN</a> </div>
-                                <div class = "gapspacing">For IOS: <a href = "https://apps.apple.com/us/app/roostoo-mock-crypto-trading/id1483561353"> https://apps.apple.com/us/app/roostoo-mock-crypto-trading/id1483561353</a> </div>
-                            (iv) The participants need to register on the Amalthea Website to be eligible for winning the exciting prizes. <br>
-                            (v) The participation code required in the Roostoo App, will be mailed to the registered participants.
-                        </div>
-                    </div>
-
-                    <!--Rules-->
-                    <br>
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">Rules</h1>
-                        <div class = "box-text">
-                            (i) The ranking would be based on the Portfolio return rates. <br>
-                            (ii) Prizes will be awarded to the top three ranked participants with highest portfolio return rates. In case of a tie, prizes will be awarded as deemed fair by the organisers. <br>
-                            (iii) All participants will be provided with a virtual participation certificate. <br>
-                            (iv) Winners would be announced within 48 hours after the event ends, on the Amalthea website and respective social media platforms. <br>
-                            (v) Short Selling is not supported and allowed. <br>
-                            (vi) Buying on margins is not allowed. <br>
-                            (vii) Bot Assisted Trading, Hyper Frequency, Multiple Accounts Trading, and any illegitimate activities which suggest cheating or exploiting the systems are not allowed. <br>
-                            (viii) Users who cancel orders more than 20 times per minute may be disqualified. <br>
-                            (ix) Creation of multiple accounts by any single user to participate in the event will lead to disqualification. If the system detects that two users have conspired to place matched orders, their participation will be disqualified. <br>
-                            (x) ROOSTOO HAS SOLE AND FINAL DISCRETION OF INTERPRETATION OF THE COMPETITION RULES AND RIGHTS TO DISQUALIFY ANY USERS WHO VIOLATE THE RULES. <br>
-                            (xi) Participants will have to agree to Roostoo Terms and Conditions upon signing in. <br>
-                            (xii) The event DOES NOT include any buying or selling of any real cryptocurrencies with real money. The money that participants will use to trade will be mock money deposited in the virtual portfolio.
-                        </div>
-                    </div>
-                </div>
-
-                <!--Dcode-->
-                <div class="mySlides2">
-
-                    <br>
-                    <div class = "box1">
-                        <h1 class = "box-heading">Coming Soon</h1>
-                    </div>
-
-                </div>
-            </div>
-            <br>
+    <br><br><br>
+    <!--Event Logos Slideshow-->
+    <div class="container-fluid">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img class="event-slides" src="static/images/quickwitlogo.png">
         </div>
 
-        <br>
-        <!--Footer-->
+        <div class="mySlides1">
+          <img class="event-slides" src="static/images/cryptorush.png">
+        </div>
+
+        <div class="mySlides1">
+          <img class="event-slides" src="static/images/Dcode_logo.png">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="container-fluid events-infoo">
+      <div class="slideshow-container">
+        <!--Quickwit-->
+        <div class="mySlides2">
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">About</h1>
+            <div class="row">
+              <div class="col-12 box-text">Quickwit is a short weekly online quiz conducted on our instagram handle <a href="https://www.instagram.com/amalthea_iitgn/"> @amalthea_iitgn</a>.
+                This quiz is conducted every Sunday at sharp 9pm having questions related to various fileds of science and technology.
+                It appreciates your accuracy as well as quick response and the leaderboard gets updated every week.
+                The top 10 contestents from the leaderboard get a shout out from our instagram handle every week.</div>
+            </div>
+          </div>
+          <!--Leaderboard-->
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">Leaderboard</h1>
+          </div>
+          <!--Previous Weeks-->
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">Previous Weeks</h1>
+          </div>
+        </div>
+
+        <!--Cryptorush-->
+        <div class="mySlides2">
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">About</h1>
+            <div class="row">
+              <div class="col-12 box-text">Cryptocurrency trading is a new speculation business that has gained significant boost after the government lifted the ban on cryptocurrencies in March 2020. CryptoRush, organised by Amalthea, brings forth a
+                unique platform to test your mettle in Cryptocurrency trading without any risk of loosing money. Why not try out your speculation or luck on mock $50,000 that you'll be given to trade and make the best of it as if you were doing it in
+                a real market!</div>
+              <!--<div class = "col-md-4 About-video"></div>-->
+            </div>
+          </div>
+
+          <!--Rules-->
+          <br>
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">Participation</h1>
+            <div class="box-text">
+              (i) There are no prerequisites for this competition, but knowlege of stock trading would definitely increase your chances of winning! <br>
+              (ii) There is no participation fee. <br>
+              (iii) The event is going to be held online on Roostoo application. The app (<b> Roostoo – Mock Crypto Trading </b>) can be downloaded from the links below: <br>
+              <div class="gapspacing">For Android: <a href="https://play.google.com/store/apps/details?id=com.roostoo.roostoo&hl=en_IN"> https://play.google.com/store/apps/details?id=com.roostoo.roostoo&hl=en_IN</a> </div>
+              <div class="gapspacing">For IOS: <a href="https://apps.apple.com/us/app/roostoo-mock-crypto-trading/id1483561353"> https://apps.apple.com/us/app/roostoo-mock-crypto-trading/id1483561353</a> </div>
+              (iv) The participants need to register on the Amalthea Website to be eligible for winning the exciting prizes. <br>
+              (v) The participation code required in the Roostoo App, will be mailed to the registered participants.
+            </div>
+          </div>
+
+          <!--Rules-->
+          <br>
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">Rules</h1>
+            <div class="box-text">
+              (i) The ranking would be based on the Portfolio return rates. <br>
+              (ii) Prizes will be awarded to the top three ranked participants with highest portfolio return rates. In case of a tie, prizes will be awarded as deemed fair by the organisers. <br>
+              (iii) All participants will be provided with a virtual participation certificate. <br>
+              (iv) Winners would be announced within 48 hours after the event ends, on the Amalthea website and respective social media platforms. <br>
+              (v) Short Selling is not supported and allowed. <br>
+              (vi) Buying on margins is not allowed. <br>
+              (vii) Bot Assisted Trading, Hyper Frequency, Multiple Accounts Trading, and any illegitimate activities which suggest cheating or exploiting the systems are not allowed. <br>
+              (viii) Users who cancel orders more than 20 times per minute may be disqualified. <br>
+              (ix) Creation of multiple accounts by any single user to participate in the event will lead to disqualification. If the system detects that two users have conspired to place matched orders, their participation will be disqualified. <br>
+              (x) ROOSTOO HAS SOLE AND FINAL DISCRETION OF INTERPRETATION OF THE COMPETITION RULES AND RIGHTS TO DISQUALIFY ANY USERS WHO VIOLATE THE RULES. <br>
+              (xi) Participants will have to agree to Roostoo Terms and Conditions upon signing in. <br>
+              (xii) The event DOES NOT include any buying or selling of any real cryptocurrencies with real money. The money that participants will use to trade will be mock money deposited in the virtual portfolio.
+            </div>
+          </div>
+        </div>
+
+        <!--Dcode-->
+        <div class="mySlides2">
+
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">Coming Soon</h1>
+          </div>
+
+        </div>
+      </div>
+      <br>
     </div>
 
-    <script src = "static/js/events.js"></script>
-    <!--Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--Footer-->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,96L20,112C40,128,80,160,120,154.7C160,149,200,107,240,101.3C280,96,320,128,360,122.7C400,117,440,75,480,69.3C520,64,560,96,600,112C640,128,680,128,720,149.3C760,171,800,213,840,218.7C880,224,920,192,960,186.7C1000,181,1040,203,1080,218.7C1120,235,1160,245,1200,224C1240,203,1280,149,1320,112C1360,75,1400,53,1420,42.7L1440,32L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,128L20,138.7C40,149,80,171,120,181.3C160,192,200,192,240,186.7C280,181,320,171,360,149.3C400,128,440,96,480,112C520,128,560,192,600,197.3C640,203,680,149,720,112C760,75,800,53,840,53.3C880,53,920,75,960,90.7C1000,107,1040,117,1080,117.3C1120,117,1160,107,1200,96C1240,85,1280,75,1320,74.7C1360,75,1400,85,1420,90.7L1440,96L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg> -->
+    <div class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000b76" fill-opacity="1"
+          d="M0,96L20,90.7C40,85,80,75,120,85.3C160,96,200,128,240,133.3C280,139,320,117,360,112C400,107,440,117,480,144C520,171,560,213,600,208C640,203,680,149,720,112C760,75,800,53,840,64C880,75,920,117,960,117.3C1000,117,1040,75,1080,64C1120,53,1160,75,1200,80C1240,85,1280,75,1320,85.3C1360,96,1400,128,1420,144L1440,160L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z">
+        </path>
+      </svg>
+      <div class="bottom-left">
+        Follow us on
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 bottom-left-2" id="Social">
+        <ul class="social-network social-circle">
+          <li><a href="https://www.facebook.com/amalthea.iitgn/" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/amalthea-iit-gandhinagar/?originalSubdomain=in" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.youtube.com/user/AmaltheaIITGn" class="icoYoutube" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.instagram.com/amalthea_iitgn/" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/amalthea_iitgn?lang=en" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="bottom-right">
+        Amalthea '20
+      </div>
+      <div class="bottom-right-2">
+       Indian Institute of Technology Gandhinagar
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 bottom-right-3" id="Social">
+        <ul class="social-network social-circle">
+          <li><a href = "" class = "email" target = "_blank"><i class="fa fa-envelope"></i></a></li>
+          <li> <a href = "" class = "phone" target = "_blank"><i class="fa fa-mobile-alt"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/events.js"></script>
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 </html>
