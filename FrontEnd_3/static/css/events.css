@@ -9,12 +9,12 @@ html, body, .site{
 }
 
 body, h1 {
- font-family: 'Quicksand', sans-serif;
- font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
 }
 
 h2, h3, h4, h5, h6 {
- font-weight: 500;
+    font-weight: 500;
 }
 
 /*Navbar*/
@@ -428,4 +428,40 @@ ul.social-network li, ul.mail li {
   position: absolute;
   bottom: 3vw;
   right: 1vw;
+}
+
+@media only screen and (max-width: 777px) {
+    .bottom-left{
+        margin-top: 2px;
+        position: relative;
+        left: 35vw;
+        right:0;
+    }
+    .bottom-left-2{
+        margin-top: 0;
+        position: relative;
+        left: 10vw;
+        right:0;
+    }
+
+    .bottom-right{
+        margin-top: 10px;
+        position: relative;
+        left: 35vw;
+        right:0;
+    }
+
+    .bottom-right-2{
+        margin-top: 2px;
+        position: relative;
+        left: 8vw;
+        right:0;
+    }
+
+    .bottom-right-3{
+        margin-top: 2px;
+        position: relative;
+        left: 35vw;
+        right:0;
+    }
 }
