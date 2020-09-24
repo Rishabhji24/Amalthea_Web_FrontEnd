@@ -404,6 +404,10 @@ ul.social-network li, ul.mail li {
     transition: all 0.8s;
 }
 
+.footer {
+  font-size: 1.2rem;
+}
+
 .bottom-left {
   position: absolute;
   bottom: 8vw;
