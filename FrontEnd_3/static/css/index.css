@@ -554,6 +554,15 @@ img.event-image {
 }
 
 /*Testimonials*/
+.testimonial-box {
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 100, 255, 0.1);
+  background: #fff;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
 .personInfo {
   padding: 25px 10px !important;
   color: #000;
