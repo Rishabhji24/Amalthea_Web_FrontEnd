@@ -5,7 +5,7 @@
 // }
 document.getElementById("logo1").style.display = "none";
 document.getElementById("logo2").style.display = "none";
-window.onload = function() {
+document.querySelector("body").onload = function() {
   var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   if (width < 777) {
     document.getElementById("logo2").style.display = "block";
