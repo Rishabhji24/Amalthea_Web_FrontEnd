@@ -404,7 +404,7 @@ ul.social-network li, ul.mail li {
 
 .bottom-left {
   position: absolute;
-  bottom: 8vw;
+  bottom: 6vw;
   left: 15vw;
   color: white;
   font-weight: 500;
@@ -412,13 +412,13 @@ ul.social-network li, ul.mail li {
 
 .bottom-left-2 {
   position: absolute;
-  bottom: 4vw;
+  bottom: 2vw;
   left: 10vw;
 }
 
 .bottom-right {
   position: absolute;
-  bottom: 8.5vw;
+  bottom: 6.5vw;
   right: 28vw;
   color: white;
   font-weight: 500;
@@ -426,7 +426,7 @@ ul.social-network li, ul.mail li {
 
 .bottom-right-2 {
   position: absolute;
-  bottom: 6.5vw;
+  bottom: 4.5vw;
   right: 20vw;
   color: white;
   font-weight: 500;
@@ -434,7 +434,7 @@ ul.social-network li, ul.mail li {
 
 .bottom-right-3 {
   position: absolute;
-  bottom: 3vw;
+  bottom: 1vw;
   right: 1vw;
 }
 
