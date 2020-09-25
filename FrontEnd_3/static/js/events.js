@@ -79,7 +79,10 @@ document.getElementById("img-btn").onclick = function() {
     if (i % 2 != 0) {
         var nav = document.getElementById("hor-nav");
         nav.style.width = "100%";
-        nav.style.height = "80%";
+        var width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (width < 777) {
+          nav.style.height = "80%";
+        }
     }
     else {
         var nav = document.getElementById("hor-nav");
