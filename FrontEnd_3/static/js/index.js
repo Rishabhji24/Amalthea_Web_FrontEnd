@@ -48,6 +48,16 @@ window.onscroll = function() {
   }
 };
 
+(function() {
+  var i, e, d = document,
+    s = "script";
+  i = d.createElement("script");
+  i.async = 1;
+  i.src = "https://cdn.curator.io/published/2b2e4a64-9ea5-4867-a7c2-277ab2bd8206.js";
+  e = d.getElementsByTagName(s)[0];
+  e.parentNode.insertBefore(i, e);
+})();
+
 // $(window).scroll(function(){
 //   var scroll = $(window).scrollTop();
 //   if (scroll > 600) {

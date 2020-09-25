@@ -39,6 +39,15 @@ h2, h3, h4, h5, h6, p {
   margin-right: auto;
 }
 
+.hr-line2 {
+  height: 3px;
+  background: #454B69;
+  width: 15%;
+  margin-bottom: 4%;
+  margin-left: 14%;
+}
+
+
 @media only screen and (max-width: 777px) {
   .hr-line {
     margin-top: 35px;
@@ -625,6 +634,46 @@ img.event-image {
   background: #454B69;
   height: 5px;
 }
+
+.explore {
+  padding-left: 15%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.events-icon {
+  width: 40%;
+  border: 1px solid #ECF4FF;
+  border-radius: 100%;
+  -webkit-box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.3);
+  -moz-box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.3);
+  box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.3);
+}
+
+.theme-box a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+.explore-heading {
+  padding-left: 8%;
+  font-size: 2rem;
+  color: #454B69;
+  font-weight: 700;
+}
+
+.explore-heading-2 {
+  padding-left: 8%;
+  font-size: 1.8rem;
+  color: #454B69;
+  font-weight: 700;
+}
+
+/* @media only screen and (max-width: 777px) {
+  .explore-heading-2 {
+    font-size: 1.6rem;
+  }
+} */
 
 .footer {
   position: relative;
