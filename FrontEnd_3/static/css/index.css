@@ -21,164 +21,160 @@ body, .site {
 
 body, h1 {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
+  font-weight: 750;
 }
 
 h2, h3, h4, h5, h6, p {
-  font-weight: 600;
+  font-weight: 520;
   font-size: 1.05rem;
 }
 
 .hr-line {
-  height:3px;
+  height: 3px;
   background: #454B69;
-  width:50%;
+  width: 50%;
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
 }
 
+#logo2 path:nth-child(1) {
+  stroke-dasharray: 122;
+  stroke-dashoffset: 122;
+  animation: line-anim 2s ease forwards;
+}
 
-  #logo2 path:nth-child(1) {
-    stroke-dasharray: 122;
-    stroke-dashoffset: 122;
-    animation: line-anim 2s ease forwards;
-  }
+#logo2 path:nth-child(2) {
+  stroke-dasharray: 168;
+  stroke-dashoffset: 168;
+  animation: line-anim 2s ease forwards 0.2s;
+}
 
-  #logo2 path:nth-child(2) {
-    stroke-dasharray: 168;
-    stroke-dashoffset: 168;
-    animation: line-anim 2s ease forwards 0.2s;
-  }
+#logo2 path:nth-child(3) {
+  stroke-dasharray: 122;
+  stroke-dashoffset: 122;
+  animation: line-anim 2s ease forwards 0.4s;
+}
 
-  #logo2 path:nth-child(3) {
-    stroke-dasharray: 122;
-    stroke-dashoffset: 122;
-    animation: line-anim 2s ease forwards 0.4s;
-  }
+#logo2 path:nth-child(4) {
+  stroke-dasharray: 86;
+  stroke-dashoffset: 86;
+  animation: line-anim 2s ease forwards 0.6s;
+}
 
-  #logo2 path:nth-child(4) {
-    stroke-dasharray: 86;
-    stroke-dashoffset: 86;
-    animation: line-anim 2s ease forwards 0.6s;
-  }
+#logo2 path:nth-child(5) {
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+  animation: line-anim 2s ease forwards 0.8s;
+}
 
-  #logo2 path:nth-child(5) {
-    stroke-dasharray: 95;
-    stroke-dashoffset: 95;
-    animation: line-anim 2s ease forwards 0.8s;
-  }
+#logo2 path:nth-child(6) {
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: line-anim 2s ease forwards 1.0s;
+}
 
-  #logo2 path:nth-child(6) {
-    stroke-dasharray: 140;
-    stroke-dashoffset: 140;
-    animation: line-anim 2s ease forwards 1.0s;
-  }
+#logo2 path:nth-child(7) {
+  stroke-dasharray: 134;
+  stroke-dashoffset: 134;
+  animation: line-anim 2s ease forwards 1.2s;
+}
 
-  #logo2 path:nth-child(7) {
-    stroke-dasharray: 134;
-    stroke-dashoffset: 134;
-    animation: line-anim 2s ease forwards 1.2s;
-  }
+#logo2 path:nth-child(8) {
+  stroke-dasharray: 122;
+  stroke-dashoffset: 122;
+  animation: line-anim 2s ease forwards 1.4s;
+}
 
-  #logo2 path:nth-child(8) {
-    stroke-dasharray: 122;
-    stroke-dashoffset: 122;
-    animation: line-anim 2s ease forwards 1.4s;
-  }
+#logo2 path:nth-child(9) {
+  stroke-dasharray: 32;
+  stroke-dashoffset: 32;
+  animation: line-anim 2s ease forwards 1.6s;
+}
 
-  #logo2 path:nth-child(9) {
-    stroke-dasharray: 32;
-    stroke-dashoffset: 32;
-    animation: line-anim 2s ease forwards 1.6s;
-  }
+#logo2 path:nth-child(10) {
+  stroke-dasharray: 116;
+  stroke-dashoffset: 116;
+  animation: line-anim 2s ease forwards 1.8s;
+}
 
-  #logo2 path:nth-child(10) {
-    stroke-dasharray: 116;
-    stroke-dashoffset: 116;
-    animation: line-anim 2s ease forwards 1.8s;
-  }
+#logo2 path:nth-child(11) {
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  animation: line-anim 2s ease forwards 2.0s;
+}
 
-  #logo2 path:nth-child(11) {
-    stroke-dasharray: 130;
-    stroke-dashoffset: 130;
-    animation: line-anim 2s ease forwards 2.0s;
-  }
+#logo1 path:nth-child(1) {
+  stroke-dasharray: 168;
+  stroke-dashoffset: 168;
+  animation: line-anim 2s ease forwards;
+}
 
+#logo1 path:nth-child(2) {
+  stroke-dasharray: 231;
+  stroke-dashoffset: 231;
+  animation: line-anim 2s ease forwards 0.2s;
+}
 
+#logo1 path:nth-child(3) {
+  stroke-dasharray: 168;
+  stroke-dashoffset: 168;
+  animation: line-anim 2s ease forwards 0.4s;
+}
 
-  #logo1 path:nth-child(1) {
-    stroke-dasharray: 168;
-    stroke-dashoffset: 168;
-    animation: line-anim 2s ease forwards;
-  }
+#logo1 path:nth-child(4) {
+  stroke-dasharray: 119;
+  stroke-dashoffset: 119;
+  animation: line-anim 2s ease forwards 0.6s;
+}
 
-  #logo1 path:nth-child(2) {
-    stroke-dasharray: 231;
-    stroke-dashoffset: 231;
-    animation: line-anim 2s ease forwards 0.2s;
-  }
+#logo1 path:nth-child(5) {
+  stroke-dasharray: 131;
+  stroke-dashoffset: 131;
+  animation: line-anim 2s ease forwards 0.8s;
+}
 
-  #logo1 path:nth-child(3) {
-    stroke-dasharray: 168;
-    stroke-dashoffset: 168;
-    animation: line-anim 2s ease forwards 0.4s;
-  }
+#logo1 path:nth-child(6) {
+  stroke-dasharray: 192;
+  stroke-dashoffset: 192;
+  animation: line-anim 2s ease forwards 1.0s;
+}
 
-  #logo1 path:nth-child(4) {
-    stroke-dasharray: 119;
-    stroke-dashoffset: 119;
-    animation: line-anim 2s ease forwards 0.6s;
-  }
+#logo1 path:nth-child(7) {
+  stroke-dasharray: 184;
+  stroke-dashoffset: 184;
+  animation: line-anim 2s ease forwards 1.2s;
+}
 
-  #logo1 path:nth-child(5) {
-    stroke-dasharray: 131;
-    stroke-dashoffset: 131;
-    animation: line-anim 2s ease forwards 0.8s;
-  }
+#logo1 path:nth-child(8) {
+  stroke-dasharray: 168;
+  stroke-dashoffset: 168;
+  animation: line-anim 2s ease forwards 1.4s;
+}
 
-  #logo1 path:nth-child(6) {
-    stroke-dasharray: 192;
-    stroke-dashoffset: 192;
-    animation: line-anim 2s ease forwards 1.0s;
-  }
+#logo1 path:nth-child(9) {
+  stroke-dasharray: 159;
+  stroke-dashoffset: 159;
+  animation: line-anim 2s ease forwards 1.6s;
+}
 
-  #logo1 path:nth-child(7) {
-    stroke-dasharray: 184;
-    stroke-dashoffset: 184;
-    animation: line-anim 2s ease forwards 1.2s;
-  }
+#logo1 path:nth-child(10) {
+  stroke-dasharray: 178;
+  stroke-dashoffset: 178;
+  animation: line-anim 2s ease forwards 1.8s;
+}
 
-  #logo1 path:nth-child(8) {
-    stroke-dasharray: 168;
-    stroke-dashoffset: 168;
-    animation: line-anim 2s ease forwards 1.4s;
-  }
+#logo1 path:nth-child(11) {
+  stroke-dasharray: 159;
+  stroke-dashoffset: 159;
+  animation: line-anim 2s ease forwards 2.0s;
+}
 
-  #logo1 path:nth-child(9) {
-    stroke-dasharray: 159;
-    stroke-dashoffset: 159;
-    animation: line-anim 2s ease forwards 1.6s;
-  }
-
-  #logo1 path:nth-child(10) {
-    stroke-dasharray: 178;
-    stroke-dashoffset: 178;
-    animation: line-anim 2s ease forwards 1.8s;
-  }
-
-  #logo1 path:nth-child(11) {
-    stroke-dasharray: 159;
-    stroke-dashoffset: 159;
-    animation: line-anim 2s ease forwards 2.0s;
-  }
-
-  #logo1 path:nth-child(12) {
-    stroke-dasharray: 178;
-    stroke-dashoffset: 178;
-    animation: line-anim 2s ease forwards 2.2s;
-  }
-
+#logo1 path:nth-child(12) {
+  stroke-dasharray: 178;
+  stroke-dashoffset: 178;
+  animation: line-anim 2s ease forwards 2.2s;
+}
 
 @keyframes line-anim {
   to {
@@ -342,7 +338,6 @@ nav.navbar {
   width: 0;
 }
 
-
 .scroll .nav-btn:after, .scroll .dropdown-content a:after {
   background: white;
 }
@@ -372,7 +367,7 @@ nav.navbar {
   display: none;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -399,12 +394,12 @@ nav.navbar {
   color: white;
 }
 
-
 /* Change color of dropdown links on hover */
 /* .dropdown-content a:hover {background-color: #ddd;} */
-
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /*Scrollbar Handle */
 ::-webkit-scrollbar {
@@ -534,7 +529,6 @@ div.box1 {
   }
 }
 
-
 .top-padding {
   padding-top: 10%;
 }
@@ -564,7 +558,11 @@ img.event-image {
   padding: 25px 10px !important;
   color: #000;
   background: #FFF !important;
-  border: 1px solid #0d98ba;
+  /*border: 1px solid #454B69;*/
+  border-radius: 15px;
+  /* -webkit-box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.2);
+  -moz-box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.2);
+  box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.2); */
   text-align: center;
   margin: 0px 3px;
   font-size: 12pt;
@@ -572,10 +570,12 @@ img.event-image {
 
 .personInfo .quote {
   margin-top: 4vh;
+  font-weight: 400;
 }
 
 .personInfo .name {
-  margin-top: 4vh;
+  margin-top: 2vh;
+  font-weight: bolder;
 }
 
 .testimonials {
@@ -589,7 +589,6 @@ img.event-image {
   padding: 15px;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  ;
 }
 
 .testimonials .underLine {
