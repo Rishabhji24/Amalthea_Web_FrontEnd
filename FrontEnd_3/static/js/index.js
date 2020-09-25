@@ -1,7 +1,14 @@
-const logo = document.querySelectorAll("#logo path");
+// const logo = document.querySelectorAll("#logo path");
+//
+// for (let i = 0; i < logo.length; i++) {
+//   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+// }
 
-for (let i = 0; i < logo.length; i++) {
-  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+var width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+if (width < 777) {
+  document.getElementById("logo1").style.display = "none";
+} else {
+  document.getElementById("logo2").style.display = "none";
 }
 
 //Navbar
