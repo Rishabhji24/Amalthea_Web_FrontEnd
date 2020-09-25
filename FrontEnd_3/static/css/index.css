@@ -673,11 +673,11 @@ img.event-image {
   margin-bottom: 5%;
 }
 
-/* @media only screen and (max-width: 777px) {
+@media only screen and (max-width: 777px) {
   .explore-heading-2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
-} */
+}
 
 .footer {
   position: relative;
