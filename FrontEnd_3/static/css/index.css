@@ -669,6 +669,10 @@ img.event-image {
   font-weight: 700;
 }
 
+.explore-col {
+  margin-bottom: 5%;
+}
+
 /* @media only screen and (max-width: 777px) {
   .explore-heading-2 {
     font-size: 1.6rem;
