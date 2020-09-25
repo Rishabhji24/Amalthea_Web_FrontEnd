@@ -80,7 +80,7 @@ document.getElementById("img-btn").onclick = function() {
         var nav = document.getElementById("hor-nav");
         nav.style.width = "100%";
         var width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (width < 777) {
+        if (width < 900) {
           nav.style.height = "80%";
         }
     }
