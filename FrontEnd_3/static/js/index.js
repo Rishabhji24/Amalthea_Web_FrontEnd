@@ -6,8 +6,10 @@
 
 var width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if (width < 777) {
+  document.getElementById("logo2").style.display = "block";
   document.getElementById("logo1").style.display = "none";
 } else {
+  document.getElementById("logo1").style.display = "block";
   document.getElementById("logo2").style.display = "none";
 }
 

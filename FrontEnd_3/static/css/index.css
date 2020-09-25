@@ -28,7 +28,7 @@ h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 777px) {
+
   #logo2 path:nth-child(1) {
     stroke-dasharray: 116;
     stroke-dashoffset: 116;
@@ -94,9 +94,9 @@ h2, h3, h4, h5, h6 {
     stroke-dashoffset: 123;
     animation: line-anim 2s ease forwards 2.0s;
   }
-}
 
-@media (min-width: 778px) {
+
+
   #logo1 path:nth-child(1) {
     stroke-dasharray: 168;
     stroke-dashoffset: 168;
@@ -168,7 +168,7 @@ h2, h3, h4, h5, h6 {
     stroke-dashoffset: 178;
     animation: line-anim 2s ease forwards 2.2s;
   }
-}
+
 
 @keyframes line-anim {
   to {
