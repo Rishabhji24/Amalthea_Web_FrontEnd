@@ -193,7 +193,6 @@ nav.navbar {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-
 /*Scrollbar Handle */
 ::-webkit-scrollbar {
   width: 5px;
@@ -246,7 +245,7 @@ div.update-spacing{
   div.update-spacing{
     height: 50vh;
   }
-}  
+}
 
 /*Footer*/
 .footer {
