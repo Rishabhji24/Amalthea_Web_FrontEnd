@@ -217,12 +217,12 @@ div.container-fluid{
 
 /* Position the "next button" to the right */
 .next {
-    right: 12px;
+    right: 6px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: 12px;
+  left: 6px;
 }
 
 /* On hover, add a grey background color */
