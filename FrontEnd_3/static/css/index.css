@@ -21,11 +21,11 @@ body, .site {
 
 body, h1 {
     font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-weight: 800;
   }
 
 h2, h3, h4, h5, h6 {
-    font-weight: 500;
+    font-weight: 400;
   }
 
 /*Navbar*/
@@ -60,12 +60,16 @@ header {
     z-index: 1000;
 }
 
-.fa-user {
-    color: blue;
+.img-btn {
+  src: url("../static/images/logo_white.svg");
 }
 
-.login {
-    margin-right: -6%;
+.scroll .fa-user {
+    color: #000b76;
+}
+
+.no-scroll .fa-user {
+  color: white;
 }
 
 .fixed-top {
@@ -85,16 +89,30 @@ header {
     border-style: none;
     background-color: transparent;
     font-size: 1.1rem;
-    color: white;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     outline-style: none;
-    }
+}
+
+.scroll .nav-btn {
+  color: white;
+}
+
+.no-scroll .nav-btn{
+  color: #000b76;
+}
 
 .btn:hover {
-    color: white;
     text-decoration: none;
     background-color: transparent;
+}
+
+.scroll .btn:hover {
+  color: white;
+}
+
+.no-scroll .btn:hover {
+  color: #000b76;
 }
 
 .btn:focus,.btn:active {
@@ -125,11 +143,18 @@ nav.navbar {
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0, 1, 0.58, 1);
     overflow: hidden;
-    background: #000b76;
     /*background: rgb(2,0,36);
     background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(94,94,225,0.98) 29%, rgba(0,212,255,1) 100%);*/
     border-radius: 30px;
     margin-right: 0;
+}
+
+.scroll #hor-nav {
+  background: #000b76;
+}
+
+.no-scroll #hor-nav {
+  background: white;
 }
 
 .nav-btn:after {
@@ -140,9 +165,16 @@ nav.navbar {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: white;
     transition: width 0.3s ease 0s;
     width: 0;
+}
+
+.scroll .nav-btn:after {
+  background: white;
+}
+
+.no-scroll .nav-btn:after {
+  background: #000b76;
 }
 
 .nav-btn:hover:after {
@@ -192,8 +224,6 @@ div.Theme-Text {
 
 div.Theme-Text h1{
     color:white;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
     font-size: 50px;
     margin-bottom: -10px;
 }
@@ -234,9 +264,6 @@ div.box1 {
 }
 
 h1.box-heading{
-    font-family: 'Inter', sans-serif;
-    font-size: 35px;
-    font-weight: bold;
     color:#454B69;
     letter-spacing: -1px;
     text-align: center;
@@ -244,9 +271,6 @@ h1.box-heading{
 
 div.box-text{
     margin-top: 4px;
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
     color: #0c0f12;
 }
 
