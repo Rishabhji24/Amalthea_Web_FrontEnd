@@ -5,7 +5,7 @@
 // }
 document.getElementById("logo1").style.display = "none";
 document.getElementById("logo2").style.display = "none";
-document.querySelector("svg").onload = function() {
+// document.querySelector("svg").onload = function() {
   var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   if (width < 777) {
     document.getElementById("logo2").style.display = "block";
@@ -15,7 +15,7 @@ document.querySelector("svg").onload = function() {
     document.getElementById("logo2").style.display = "none";
   }
 
-}
+// }
 //Navbar
 var i = 0;
 document.getElementById("img-btn").onclick = function() {
