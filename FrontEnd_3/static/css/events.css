@@ -58,16 +58,8 @@ header {
   z-index: 1000;
 }
 
-.img-btn {
-  src: url("../static/images/logo_white.svg");
-}
-
-.scroll .fa-user, .scroll .fa-caret-down {
+.fa-user, .fa-caret-down {
   color: #000b76;
-}
-
-.no-scroll .fa-user, .no-scroll .fa-caret-down {
-  color: white;
 }
 
 .fixed-top {
@@ -87,30 +79,16 @@ header {
   border-style: none;
   background-color: transparent;
   font-size: 1.1rem;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   outline-style: none;
 }
 
-.scroll .nav-btn {
-  color: white;
-}
-
-.no-scroll .nav-btn {
-  color: #000b76;
-}
-
 .btn:hover {
+  color: white;
   text-decoration: none;
   background-color: transparent;
-}
-
-.scroll .btn:hover {
-  color: white;
-}
-
-.no-scroll .btn:hover {
-  color: #000b76;
 }
 
 .btn:focus, .btn:active {
@@ -141,18 +119,11 @@ nav.navbar {
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0, 1, 0.58, 1);
   overflow: hidden;
+  background: #000b76;
   /*background: rgb(2,0,36);
     background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(94,94,225,0.98) 29%, rgba(0,212,255,1) 100%);*/
   border-radius: 30px;
   margin-right: 0;
-}
-
-.scroll #hor-nav {
-  background: #000b76;
-}
-
-.no-scroll #hor-nav {
-  background: white;
 }
 
 .nav-btn:after {
@@ -163,6 +134,7 @@ nav.navbar {
   height: 2px;
   left: 50%;
   position: absolute;
+  background: white;
   transition: width 0.3s ease 0s;
   width: 0;
 }
@@ -175,17 +147,9 @@ nav.navbar {
   height: 2px;
   left: 50%;
   position: absolute;
+  background: white;
   transition: width 0.3s ease 0s;
   width: 0;
-}
-
-
-.scroll .nav-btn:after, .scroll .dropdown-content a:after {
-  background: white;
-}
-
-.no-scroll .nav-btn:after, .no-scroll .dropdown-content a:after {
-  background: #000b76;
 }
 
 .nav-btn:hover:after {
@@ -206,6 +170,7 @@ nav.navbar {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  background-color: #000b76;
   display: none;
   position: absolute;
   min-width: 160px;
@@ -213,29 +178,14 @@ nav.navbar {
   z-index: 1;
 }
 
-.no-scroll .dropdown-content {
-  background-color: white;
-}
-
-.scroll .dropdown-content {
-  background-color: #000b76;
-}
-
 /* Links inside the dropdown */
 .dropdown-content a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
-
-.no-scroll .dropdown-content a {
-  color: #000b76;
-}
-
-.scroll .dropdown-content a {
   color: white;
+  font-weight: bold;
 }
-
 
 /* Change color of dropdown links on hover */
 /* .dropdown-content a:hover {background-color: #ddd;} */
