@@ -215,11 +215,11 @@ header {
   src: url("../static/images/logo_white.svg");
 }
 
-.scroll .fa-user {
+.scroll .fa-user, .scroll .fa-caret-down {
   color: #000b76;
 }
 
-.no-scroll .fa-user {
+.no-scroll .fa-user, .no-scroll .fa-caret-down {
   color: white;
 }
 
@@ -320,11 +320,24 @@ nav.navbar {
   width: 0;
 }
 
-.scroll .nav-btn:after {
+.dropdown-content a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+
+.scroll .nav-btn:after, .scroll .dropdown-content a:after {
   background: white;
 }
 
-.no-scroll .nav-btn:after {
+.no-scroll .nav-btn:after, .no-scroll .dropdown-content a:after {
   background: #000b76;
 }
 
@@ -332,6 +345,56 @@ nav.navbar {
   width: 50%;
   left: 25%;
 }
+
+.dropdown-content a:hover:after {
+  width: 50%;
+  left: 10%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.no-scroll .dropdown-content {
+  background-color: white;
+}
+
+.scroll .dropdown-content {
+  background-color: #000b76;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.no-scroll .dropdown-content a {
+  color: #000b76;
+}
+
+.scroll .dropdown-content a {
+  color: white;
+}
+
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #ddd;} */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
 
 /*Scrollbar Handle */
 ::-webkit-scrollbar {
@@ -439,6 +502,7 @@ div.box1 {
   padding-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
+  color: #454B69;
 }
 
 .top-padding {
