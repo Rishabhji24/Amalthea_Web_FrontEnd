@@ -215,14 +215,22 @@ div.container-fluid{
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
-    right: 6px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Position the "next button" to the right */
+@media only screen and (min-width: 777px) {
+.next {
+    right: 12px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: 6px;
+  left: 12px;
+}
 }
 
 /* On hover, add a grey background color */
