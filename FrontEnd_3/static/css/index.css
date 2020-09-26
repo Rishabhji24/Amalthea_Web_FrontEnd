@@ -889,6 +889,13 @@ ul.mail li {
     color: black;
   }
 
+  .bottom-right .hr-phone {
+    position: relative;
+    height: 3px;
+    background: white;
+    width: 20%;
+  }
+
   .bottom-right {
     margin-top: 10px;
     position: relative;
