@@ -654,12 +654,6 @@ img.event-image {
   margin-left: 15%;
 }
 
-@media only screen and (max-width: 777px) {
-  .right {
-    margin-left: 4%;
-  }
-}
-
 .theme-box a:hover {
   outline: none;
   text-decoration: none;
@@ -670,6 +664,16 @@ img.event-image {
   font-size: 2rem;
   color: #454B69;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 777px) {
+  .right {
+    margin-left: 0;
+  }
+
+  .explore-heading {
+    padding-left: 2%;
+  }
 }
 
 .explore-heading-2 {
