@@ -244,14 +244,28 @@ header {
   src: url("../static/images/logo_white.svg");
 }
 
+.fa-stack {
+  border-radius: 15px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.no-scroll .fa-stack {
+  background-color: white;
+}
+
+.scroll .fa-stack {
+  background-color: #000b76;
+}
+
 .scroll .fa-user,
 .scroll .fa-caret-down {
-  color: #000b76;
+  color: white;
 }
 
 .no-scroll .fa-user,
 .no-scroll .fa-caret-down {
-  color: white;
+  color: #000b76;
 }
 
 .fixed-top {
@@ -389,6 +403,7 @@ nav.navbar {
 .dropdown {
   position: relative;
   display: inline-block;
+  width: 60px;
 }
 
 /* Dropdown Content (Hidden by Default) */

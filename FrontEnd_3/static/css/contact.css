@@ -58,8 +58,18 @@ header {
   z-index: 1000;
 }
 
+.fa-stack {
+  border-radius: 15px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.fa-stack {
+  background-color: #000b76;
+}
+
 .fa-user, .fa-caret-down {
-  color: #000b76;
+  color: white;
 }
 
 .fixed-top {
@@ -166,6 +176,7 @@ nav.navbar {
 .dropdown {
   position: relative;
   display: inline-block;
+  width: 60px;
 }
 
 /* Dropdown Content (Hidden by Default) */
