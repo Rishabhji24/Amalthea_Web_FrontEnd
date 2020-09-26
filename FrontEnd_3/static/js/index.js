@@ -37,6 +37,18 @@ document.getElementById("img-btn").onclick = function() {
 var myNav = document.getElementById('header');
 window.onscroll = function() {
   "use strict";
+  var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  if (width < 777) {
+    if (document.body.scrollTop >= 380 || document.documentElement.scrollTop >= 380) {
+      $('.img-col input').attr('src', 'static/images/logo_white.svg');
+      myNav.classList.add("scroll");
+      myNav.classList.remove("no-scroll");
+    } else {
+      $('.img-col input').attr('src', 'static/images/logo.svg');
+      myNav.classList.add("no-scroll");
+      myNav.classList.remove("scroll");
+    }
+  } else {
   if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
     $('.img-col input').attr('src', 'static/images/logo_white.svg');
     myNav.classList.add("scroll");
@@ -46,6 +58,7 @@ window.onscroll = function() {
     myNav.classList.add("no-scroll");
     myNav.classList.remove("scroll");
   }
+}
 };
 
 (function() {
