@@ -44,7 +44,7 @@ window.onscroll = function() {
   var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   if (width < 777) {
     var nav = document.getElementById("hor-nav");
-    if (document.body.scrollTop >= 410 || document.documentElement.scrollTop >= 410) {
+    if (document.body.scrollTop >= 405 || document.documentElement.scrollTop >= 405) {
       if (!isPositionFixed) {
         $notif.css({
           'position': 'fixed',
