@@ -926,7 +926,7 @@ ul.mail li {
 }
 
 .no_pointer_events {
-  height: 90vh;
+  height: 80vh;
   pointer-events: none;
   position: relative;
   z-index: 110;
@@ -942,7 +942,7 @@ ul.mail li {
 
 @media only screen and (max-width: 777px) {
   .no_pointer_events {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
