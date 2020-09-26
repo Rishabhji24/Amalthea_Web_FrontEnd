@@ -6,14 +6,14 @@
 document.getElementById("logo1").style.display = "none";
 document.getElementById("logo2").style.display = "none";
 // document.querySelector("svg").onload = function() {
-  var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  if (width < 777) {
-    document.getElementById("logo2").style.display = "block";
-    document.getElementById("logo1").style.display = "none";
-  } else {
-    document.getElementById("logo1").style.display = "block";
-    document.getElementById("logo2").style.display = "none";
-  }
+var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+if (width < 777) {
+  document.getElementById("logo2").style.display = "block";
+  document.getElementById("logo1").style.display = "none";
+} else {
+  document.getElementById("logo1").style.display = "block";
+  document.getElementById("logo2").style.display = "none";
+}
 
 // }
 //Navbar
@@ -37,21 +37,66 @@ document.getElementById("img-btn").onclick = function() {
 var myNav = document.getElementById('header');
 window.onscroll = function() {
   "use strict";
+
+  var $notif = $('.current-box');
+  var isPositionFixed = ($notif.css('position') == 'fixed');
+
   var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   if (width < 777) {
     var nav = document.getElementById("hor-nav");
+    if (document.body.scrollTop >= 425 || document.documentElement.scrollTop >= 425) {
+      if (!isPositionFixed) {
+        $notif.css({
+          'position': 'fixed',
+          'top': '0px'
+        });
+      }
+    } else {
+      if (isPositionFixed) {
+        $notif.css({
+          'position': 'static',
+          'top': '0px'
+        });
+      }
+    }
     if (nav.style.height < 70) {
-    if (document.body.scrollTop >= 380 || document.documentElement.scrollTop >= 380) {
-      $('.img-col input').attr('src', 'static/images/logo_white.svg');
-      myNav.classList.add("scroll");
-      myNav.classList.remove("no-scroll");
+      if (document.body.scrollTop >= 380 || document.documentElement.scrollTop >= 380) {
+        $('.img-col input').attr('src', 'static/images/logo_white.svg');
+        myNav.classList.add("scroll");
+        myNav.classList.remove("no-scroll");
+      } else {
+        $('.img-col input').attr('src', 'static/images/logo.svg');
+        myNav.classList.add("no-scroll");
+        myNav.classList.remove("scroll");
+      }
     } else {
-      $('.img-col input').attr('src', 'static/images/logo.svg');
-      myNav.classList.add("no-scroll");
-      myNav.classList.remove("scroll");
+      if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+        $('.img-col input').attr('src', 'static/images/logo_white.svg');
+        myNav.classList.add("scroll");
+        myNav.classList.remove("no-scroll");
+      } else {
+        $('.img-col input').attr('src', 'static/images/logo.svg');
+        myNav.classList.add("no-scroll");
+        myNav.classList.remove("scroll");
+      }
     }
   } else {
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+    if (document.body.scrollTop >= 650 || document.documentElement.scrollTop >= 650) {
+      if (!isPositionFixed) {
+        $notif.css({
+          'position': 'fixed',
+          'top': '0px'
+        });
+      }
+    } else {
+      if (isPositionFixed) {
+        $notif.css({
+          'position': 'static',
+          'top': '0px'
+        });
+      }
+    }
+    if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
       $('.img-col input').attr('src', 'static/images/logo_white.svg');
       myNav.classList.add("scroll");
       myNav.classList.remove("no-scroll");
@@ -61,17 +106,6 @@ window.onscroll = function() {
       myNav.classList.remove("scroll");
     }
   }
-  } else {
-  if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
-    $('.img-col input').attr('src', 'static/images/logo_white.svg');
-    myNav.classList.add("scroll");
-    myNav.classList.remove("no-scroll");
-  } else {
-    $('.img-col input').attr('src', 'static/images/logo.svg');
-    myNav.classList.add("no-scroll");
-    myNav.classList.remove("scroll");
-  }
-}
 };
 
 (function() {
