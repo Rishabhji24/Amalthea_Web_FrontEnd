@@ -650,6 +650,16 @@ img.event-image {
   box-shadow: -4px 2px 5px 0px rgba(69, 75, 105, 0.3);
 }
 
+.right {
+  margin-left: 15%;
+}
+
+@media only screen and (max-width: 777px) {
+  .right {
+    margin-left: 4%;
+  }
+}
+
 .theme-box a:hover {
   outline: none;
   text-decoration: none;
