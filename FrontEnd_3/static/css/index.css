@@ -891,10 +891,11 @@ ul.mail li {
 
   .bottom-right .hr-phone {
     position: relative;
-    height: 3px;
+    height: 2px;
     background: white;
-    width: 20%;
-    left: 4vw;
+    width: 15%;
+    left: 6vw;
+    margin-top: 5px;
   }
 
   .bottom-right {
