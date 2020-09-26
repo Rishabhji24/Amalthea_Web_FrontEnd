@@ -81,18 +81,18 @@ window.onscroll = function() {
       }
     }
   } else {
-    if (document.body.scrollTop >= 650 || document.documentElement.scrollTop >= 650) {
+    if (document.body.scrollTop >= 700 || document.documentElement.scrollTop >= 700) {
       if (!isPositionFixed) {
         $notif.css({
           'position': 'fixed',
-          'top': '0px'
+          'top': '25px'
         });
       }
     } else {
       if (isPositionFixed) {
         $notif.css({
           'position': 'static',
-          'top': '0px'
+          'top': '25px'
         });
       }
     }

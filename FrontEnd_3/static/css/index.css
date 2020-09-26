@@ -308,6 +308,7 @@ nav.navbar {
   padding-top: 2% !important;
   padding-left: 6% !important;
   width: 90%;
+  padding-bottom: 0 !important;
 }
 
 .img-btn {
