@@ -9,22 +9,28 @@ html {
   line-height: 1.8rem;
 }
 
-body, .site {
+body,
+.site {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
   max-width: 100vw !important;
   text-align: justify;
   line-height: 1.8rem;
-  background-color: #ECF4FF;
 }
 
-body, h1 {
+body,
+h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 750;
 }
 
-h2, h3, h4, h5, h6, p {
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-weight: 520;
   font-size: 1.05rem;
 }
@@ -231,18 +237,20 @@ h2, h3, h4, h5, h6, p {
 header {
   position: fixed;
   padding: 3%;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .img-btn {
   src: url("../static/images/logo_white.svg");
 }
 
-.scroll .fa-user, .scroll .fa-caret-down {
+.scroll .fa-user,
+.scroll .fa-caret-down {
   color: #000b76;
 }
 
-.no-scroll .fa-user, .no-scroll .fa-caret-down {
+.no-scroll .fa-user,
+.no-scroll .fa-caret-down {
   color: white;
 }
 
@@ -289,7 +297,8 @@ header {
   color: #000b76;
 }
 
-.btn:focus, .btn:active {
+.btn:focus,
+.btn:active {
   outline: none !important;
   box-shadow: none;
 }
@@ -355,11 +364,13 @@ nav.navbar {
   width: 0;
 }
 
-.scroll .nav-btn:after, .scroll .dropdown-content a:after {
+.scroll .nav-btn:after,
+.scroll .dropdown-content a:after {
   background: white;
 }
 
-.no-scroll .nav-btn:after, .no-scroll .dropdown-content a:after {
+.no-scroll .nav-btn:after,
+.no-scroll .dropdown-content a:after {
   background: #000b76;
 }
 
@@ -700,14 +711,16 @@ img.event-image {
   height: 22vw;
 }
 
-ul.social-network, ul.mail {
+ul.social-network,
+ul.mail {
   list-style: none;
   display: inline;
   margin-left: 0 !important;
   padding: 0;
 }
 
-ul.social-network li, ul.mail li {
+ul.social-network li,
+ul.mail li {
   display: inline;
   margin: 0 5px;
 }
@@ -720,7 +733,8 @@ ul.social-network li, ul.mail li {
   background-color: #007bb7;
 }
 
-.social-network a.icoYoutube:hover, .social-network a.email:hover {
+.social-network a.icoYoutube:hover,
+.social-network a.email:hover {
   background-color: #ff003a;
 }
 
@@ -728,7 +742,8 @@ ul.social-network li, ul.mail li {
   background-color: #ff1493;
 }
 
-.social-network a.icoTwitter:hover, .social-network a.phone:hover {
+.social-network a.icoTwitter:hover,
+.social-network a.phone:hover {
   background-color: #007bb7;
 }
 
@@ -869,4 +884,31 @@ ul.social-network li, ul.mail li {
     margin-top: -3px;
     ;
   }
+}
+
+.theme-fixed {
+  position: fixed;
+  z-index: -1;
+  /* margin-top: ; */
+  width: 100%;
+}
+
+.no_pointer_events {
+  pointer-events: none;
+  position: relative;
+  z-index: 110;
+  width: 100%;
+  padding-bottom: 35%;
+  opacity: 1;
+  margin-bottom: 50px;
+  -webkit-transition: opacity .6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity .6s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+.web {
+  background-color: #ECF4FF;
+  z-index: 5000;
 }
