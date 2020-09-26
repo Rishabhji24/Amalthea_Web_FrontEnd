@@ -479,6 +479,34 @@ div.Theme-Text h1.aml2020-text {
   margin-bottom: 5px;
 }
 
+.theme-fixed {
+  position: fixed;
+  z-index: -1;
+  /* margin-top: ; */
+  width: 100%;
+}
+
+.no_pointer_events {
+  pointer-events: none;
+  position: relative;
+  z-index: 110;
+  width: 100%;
+  padding-bottom: 35%;
+  opacity: 1;
+  margin-bottom: 50px;
+  height: 500px;
+  -webkit-transition: opacity .6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity .6s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+.web {
+  background-color: #ECF4FF;
+  z-index: 5000;
+}
+
 @media only screen and (max-width: 777px) {
   div.Theme {
     height: 60vh;
@@ -492,6 +520,10 @@ div.Theme-Text h1.aml2020-text {
 
   img.loopin {
     height: 0;
+  }
+
+  .no_pointer_events{
+    height: 300px;
   }
 }
 
