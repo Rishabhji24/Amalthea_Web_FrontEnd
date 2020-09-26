@@ -668,7 +668,7 @@ img.event-image {
 
 @media only screen and (max-width: 777px) {
   .right {
-    margin-left: 0;
+    margin-left: 2%;
   }
 
   .explore-heading {
