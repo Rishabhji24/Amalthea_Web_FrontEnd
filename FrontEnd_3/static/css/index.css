@@ -552,6 +552,13 @@ div.h-line {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 777px) {
+  .current-box {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
 div.box1 {
   padding: 25px;
   border-radius: 15px;
