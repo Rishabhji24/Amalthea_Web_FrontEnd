@@ -4,7 +4,7 @@ Just a basic events page for Amalthea (Only for 6 events): D'Code, Logix, Electr
 (DRA event does not have a registration page.)
 
 Made using HTML, CSS, JavaScript & Google Sheets for storing registration information. View page at:
-https://reuben27.github.io/Amamthea_Web_FrontEnd/FrontEnd_0/Amalthea.html
+https://reuben27.github.io/Amalthea_Web_FrontEnd/FrontEnd_0/Amalthea.html
 
 # Google Sheet links:
 The following sheets store the data once the registration form is filled.
