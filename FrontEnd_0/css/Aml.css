@@ -1,0 +1,393 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #ECF5FF;
+  font-family: 'Arvo', serif;
+  box-sizing: border-box;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
+
+section {
+  opacity: 0;
+  transform: translate(0, 20px); 
+  transition: all 1s;
+}
+  
+section.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
+}
+
+/*Navigation Bar*/
+nav{
+  width: 100%;
+  background: #007bff;
+}
+
+ul{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  font-size: 3vh;
+  font-weight: 700;    
+}
+
+ul li.navkio:hover{
+  background: #6610f2;
+  color: white;
+}
+
+ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  background: #001f44;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 788px) {
+.toggle{
+  display:block;
+}
+ul{
+  width: 100%;
+  display: none;
+}
+ul li{
+  display: block;
+  text-align: right;
+}
+.active{
+  display:block;
+}
+}
+
+/*Home*/
+div.container-fluid{
+  position: relative;
+  margin:0;
+  padding:0;
+}
+
+img.bg-image{
+  width: 100%;
+  opacity: 0.3;
+}
+
+h1.amltext{
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  display: block;
+  color:  #007bff;
+  font-size: 6vw ;
+  font-weight: 600;
+}
+
+h2.loc{
+  position: absolute;
+  top: 39%;
+  left: 12%;
+  color: #007bff;
+  font-size: 4vw;
+  font-weight: 600;
+  display: block;
+}
+
+img.loc-image{
+  position: absolute;
+  width: 6%;
+  height: 6%;
+  top: 90%;
+  left: 12%;
+}
+
+h3.fullloc1{
+  position:absolute;
+  top: 90%;
+  left: 19%;
+  color: black;
+  font-size: 1vw;
+  font-weight: 700;
+  display: block;
+}
+
+h3.fullloc2{
+  position:absolute;
+  top: 92%;
+  left: 19%;
+  color: black;
+  font-size: 1vw;
+  font-weight: 400;
+  display: block;
+}
+
+/*Event Heading*/
+h1.eventheader{
+  font-weight:600;
+  text-align: center;
+  font-size: 4vw;
+  color: darkblue;
+  text-decoration: underline;
+}
+
+/*About Event*/
+div.description-box{
+  padding: 2.5%;
+  border-radius: 5px;
+  box-shadow:0px -5px 10px rgba(0,100,255,0.1);
+  background: #fff;
+  box-sizing: border-box;
+  font-weight: 300;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.2vw;
+  text-align: justify;
+  opacity: 1;
+
+}
+
+/*Events*/
+img.eventlogo{
+  width:100%
+}
+
+div.eventbox{
+  padding: 2.5%;
+  border-radius: 5px;
+  box-shadow:0px -5px 10px rgba(0,100,255,0.1);
+  background: #fff;
+  box-sizing: border-box;
+  font-weight: 300;
+  margin-bottom: 5%;
+  font-size: 1.2vw;
+  text-align: justify;
+  opacity: 1;   
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
+
+/*Gallery*/
+h1.galleryheader{
+  font-weight:600;
+  text-align: center;
+  font-size: 4vw;
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.carousel{
+  background:  #ECF5FF;
+  margin-top: 20px;
+  color: darkblue;
+}
+.carousel-item{
+  text-align: center;
+  min-height: 280px; 
+  color: darkblue;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  color:darkblue;
+}
+/*Footer*/
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/*Back to Top*/
+.gotopbtn{
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoYoutube:hover {
+  background-color: #ff003a;
+}
+
+.social-network a.icoInstagram:hover {
+  background-color: #d62976;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: lightblue;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoYoutube:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoTwitter:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+.footlocimage{
+  position: relative;
+  width:20%;
+  height:20%;
+  top: 0%;
+  left: 0%;
+}
+    
+h4.footlocv{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+  
+h5.footloci{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}

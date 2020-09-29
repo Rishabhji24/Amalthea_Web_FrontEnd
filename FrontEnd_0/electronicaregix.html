@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Store HTML form submissions in Google Sheets">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <title>Electronica Registration | Amalthea 2020</title>
+  <link rel = "icon" href = "images\Amalthea_title_logo.png">
+  <link rel="stylesheet" href="css\regix.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/prefixfree@1.0.0/prefixfree.min.js"></script>
+  <script src="https://wzrd.in/standalone/formdata-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+</head>
+
+<body>  
+  <div>
+    <img class = "firstimage" src = "images\Amalthea_title_logo.png" alt = "">
+  </div>
+
+  <div class="form-container">
+    <form name="submit-to-google-sheet">
+      <h1 class = "regisheader">Electronica Registration</h1>
+      <h3>First Member</h3>
+      <div class = "row">
+        <div class = "col-lg-6">
+          <input name="FirstName1" type="text" placeholder="First Name"required>
+        </div>
+        <div class = "col-lg-6">
+          <input name="LastName1" type="text" placeholder="Last Name">
+        </div>
+      </div>
+      <input name="Email1" type="email" placeholder="Email ID" required>
+      <input name="Mobnumber1" type="number" placeholder="Mobile Number" required>
+      <input name="Institution1" type="text" placeholder="Institution" required>
+      <br>
+      <h3>Second Member</h3>
+      <div class = "row">
+        <div class = "col-lg-6">
+          <input name="FirstName2" type="text" placeholder="First Name"required>
+        </div>
+        <div class = "col-lg-6">
+          <input name="LastName2" type="text" placeholder="Last Name">
+        </div>
+      </div>
+      <input name="Email2" type="email" placeholder="Email ID" required>
+      <input name="Mobnumber2" type="number" placeholder="Mobile Number" required>
+      <input name="Institution2" type="text" placeholder="Institution" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+
+    <p class="js-success-message is-hidden">Registration Successful!</p>
+    <p class="js-error-message is-hidden">Error!Please try again!</p>
+  </div>
+
+  <div class = "backio">
+    <a href="Amalthea.html" class="btn btn-primary">Go back</a>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwid1_oVKPNzSbB5UA65F0_9NJLfZJy6uE2tUdIXb_Jdyh51v1y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const loading = document.querySelector('.js-loading')
+    const successMessage = document.querySelector('.js-success-message')
+    const errorMessage = document.querySelector('.js-error-message')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      showLoadingIndicator()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => showSuccessMessage(response))
+        .catch(error => showErrorMessage(error))
+    })
+
+    function showLoadingIndicator () {
+      form.classList.add('is-hidden')
+      loading.classList.remove('is-hidden')
+    }
+
+    function showSuccessMessage (response) {
+      console.log('Success!', response)
+      setTimeout(() => {
+        successMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+
+    function showErrorMessage (error) {
+      console.error('Error!', error.message)
+      setTimeout(() => {
+        errorMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+  </script>
+
+</body>
+</html>
