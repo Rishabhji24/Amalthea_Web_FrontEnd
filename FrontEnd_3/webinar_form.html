@@ -149,35 +149,35 @@
               Email: email,
             }
           })
-          // .then(function(doRef) {
-          //   document.getElementById("loader").style.display = "none";
-          //   error_show("Your response has been recorded!!");
-          //   $("#name").val('');
-          //   $("#email").val('');
-          //   $('#institute').val('');
-          //   $('#professional_status').val('');
-          // });
-           var xmlhttp = new XMLHttpRequest();
-          xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              var response = this.responseText;
-              if (response == "done") {
-                document.getElementById("loader").style.display = "none";
-                error_show("Your response has been recorded!!");
-                $("#name").val('');
-                $("#email").val('');
-                $('#institute').val('');
-                $('#professional_status').val('');
-
-              } else {
-                document.getElementById("loader").style.display = "none";
-                //$(".alertSubscribeTop").html("Please try again");
-                error_show("Please try again");
-              }
-            }
-          };
-          xmlhttp.open("GET", "sendMail.php?name=" + name + "&email=" + email + "&institute=" + institute + "&professional_status=" + professional_status, true);
-          xmlhttp.send();
+          .then(function(doRef) {
+            document.getElementById("loader").style.display = "none";
+            error_show("Your response has been recorded!!");
+            $("#name").val('');
+            $("#email").val('');
+            $('#institute').val('');
+            $('#professional_status').val('');
+          });
+          //  var xmlhttp = new XMLHttpRequest();
+          // xmlhttp.onreadystatechange = function() {
+          //   if (this.readyState == 4 && this.status == 200) {
+          //     var response = this.responseText;
+          //     if (response == "done") {
+          //       document.getElementById("loader").style.display = "none";
+          //       error_show("Your response has been recorded!!");
+          //       $("#name").val('');
+          //       $("#email").val('');
+          //       $('#institute').val('');
+          //       $('#professional_status').val('');
+          //
+          //     } else {
+          //       document.getElementById("loader").style.display = "none";
+          //       //$(".alertSubscribeTop").html("Please try again");
+          //       error_show("Please try again");
+          //     }
+          //   }
+          // };
+          // xmlhttp.open("GET", "sendMail.php?name=" + name + "&email=" + email + "&institute=" + institute + "&professional_status=" + professional_status, true);
+          // xmlhttp.send();
         }
       }
 
