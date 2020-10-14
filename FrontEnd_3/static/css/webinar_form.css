@@ -1,0 +1,102 @@
+#snackbar {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  border-radius: 10px;
+  z-index: 9;
+  margin-left: 50%;
+  bottom: 30px;
+  transform: translate(-50%, 0);
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.logo_form {
+  width: 8%;
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 777px) {
+  .logo_form {
+    width: 14%;
+  }
+}
+
+
+.logo_text {
+  padding: 1%;
+  padding-bottom: 0;
+  margin-left: 20%;
+  font-weight: 800;
+}
+
+.back {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.fas {
+  color: #000b76;
+}
+
+.fas:hover {
+  color: #01c5c4;
+}
+
+.content {
+  margin: 1% 16%;
+  padding: 4%;
+}
+
+.card {
+  border-radius: 1%;
+}
+
+.btn {
+  background-color: #000b76;
+  width: 30%;
+}
+
+.btn:hover {
+  background-color: #01c5c4 !important;
+  border-color: #01c5c4 !important;
+}
+
+.submit {
+  text-align: center;
+}
+
+#loader {
+  text-align: center;
+  display: none;
+}
+
+.loader-wheel {
+  animation: spin 1s infinite linear;
+  border: 2px solid rgba(30, 30, 30, 0.5);
+  border-left: 4px solid #fff;
+  border-radius: 50%;
+  height: 40px;
+  margin-top: 2%;
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
