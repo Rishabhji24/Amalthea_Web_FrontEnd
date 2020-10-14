@@ -44,32 +44,34 @@
     <hr>
     <div class="registrationText"> Please fill the below form (All fields are mandatory) </div> <br>
     <div class="form-row ">
-      <div class="form-group col-md-6"> <label> Full Name </label> <input name="fullname" id="fullname" type="text" class="form-control" placeholder="Full Name" required> </div>
-      <div class="form-group col-md-6 "> <label for="gender"> Gender </label> <select name="gender" id="gender" class="form-control" required>
+      <div class="form-group col-md-6"> <label> Name </label> <input name="name" id="name" type="text" class="form-control" placeholder="Name" required> </div>
+      <div class="form-group col-md-6 "> <label for="email"> Email ID </label>
+        <div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email ID" required> </div>
+      </div>
+      <!-- <div class="form-group col-md-6 "> <label for="gender"> Gender </label> <select name="gender" id="gender" class="form-control" required>
           <option value="" disabled selected style="display: none">--Please select an option--</option>
           <option>Male</option>
           <option>Female</option>
           <option>Other</option>
-        </select> </div>
+        </select> </div> -->
     </div>
-    <div class="form-group"> <label> Institute Name & Address </label> <input name="institute" id="institute" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div>
+    <div class="form-group"> <label> Organization/ Institution </label> <input name="institute" id="institute" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div>
     <div class="form-row">
-      <div class="form-group col-md-6 "> <label for="courseofstudy"> Program </label> <select id="courseofstudy" name="courseofstudy" class="form-control" required>
+      <div class="form-group col-md-6 "> <label for="professional_status"> Professional Status </label> <select id="professional_status" name="professional_status" class="form-control" required>
           <option value="" disabled selected style="display: none">--Please select an option--</option>
-          <option value="Bachelors">Bachelors</option>
-          <option value="Masters">Masters</option>
-          <option value="Doctorate">Doctorate</option>
-          <option value="Other">Other</option>
+          <option value="Student">Student</option>
+          <option value="Faculty">Faculty</option>
+          <option value="Researcher">Researcher</option>
+          <option value="Working Professional">Working Professional</option>
+          <option value="Others">Others</option>
         </select> </div>
-      <div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div>
+      <!-- <div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div> -->
     </div>
-    <div class="form-row ">
-      <div class="form-group col-md-6 "> <label for="email"> Mail ID </label>
-        <div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email" required> </div>
-      </div>
+    <!-- <div class="form-row ">
+
       <div class="form-group col-md-6 "> <label for="contact_number"> Contact Number </label> <input type="text" name="contact_number" id="contact_number" class="form-control" placeholder="Contact" pattern="[0-9]{10}" required> </div>
-    </div>
-    <br><br>
+    </div> -->
+    <br>
     <div class="form-group submit"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Submit </button> </div>
     <div id="loader">
       <div class="loader-wheel"></div>
@@ -122,35 +124,28 @@
       // var innerHTML = '<div><h2>REGISTER FOR THE WEBINAR</h2></div><hr><div class="registrationText"> Please fill the below form (All fields are mandatory) </div> <br><div class="form-row "><div class="form-group col-md-6"> <label> Full Name </label> <input name="fullname" id="fullname" type="text" class="form-control" placeholder="Full Name" required> </div><div class="form-group col-md-6 "> <label for="gender"> Gender </label> <select name="gender" id="gender" class="form-control" required><option value="" disabled selected style="display: none">--Please select an option--</option><option>Male</option><option>Female</option><option>Other</option></select> </div></div><div class="form-group"> <label> Institute Name & Address </label> <input name="institute" id="institute" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div><div class="form-row"><div class="form-group col-md-6 "> <label for="courseofstudy"> Program </label> <select id="courseofstudy" name="courseofstudy" class="form-control" required><option value="" disabled selected style="display: none">--Please select an option--</option><option value="Bachelors">Bachelors</option><option value="Masters">Masters</option><option value="Doctorate">Doctorate</option><option value="Other">Other</option></select> </div><div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div></div><div class="form-row "><div class="form-group col-md-6 "> <label for="email"> Mail ID </label><div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email" required> </div></div><div class="form-group col-md-6 "> <label for="contact_number"> Contact Number (WhatsApp) </label> <input type="text" name="contact_number" id="contact_number" class="form-control" pattern="[0-9]{10}" required> </div></div><br><br><div class="form-group submit"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Submit </button> </div>';
       function submitForm() {
         document.getElementById("loader").style.display = "block";
-        var fullname = $("#fullname").val();
-        var gender = $("#gender").val();
+        var name = $("#name").val();
         var email = $("#email").val();
         var institute = $("#institute").val();
-        var courseofstudy = $("#courseofstudy").val();
-        var year = $("#year").val();
-        var contact_number = $("#contact_number").val();
+        var professional_status = $("#professional_status").val();
         var timestamp = new Date().toLocaleString();
-        if (email === null || fullname === null || gender === null || institute === null || courseofstudy === null || year === null || contact_number === null) {
+        if (email === null || name === null || institute === null || professional_status === null ) {
           document.getElementById("loader").style.display = "none";
           error_show("Please fill all the fields");
         } else {
 
-          if (email.trim() === "" || fullname.trim() === "" || gender.trim() === "" || institute.trim() === "" || courseofstudy.trim() === "" || year.trim() === "" || contact_number.trim() === "") {
+          if (email.trim() === "" || name.trim() === ""|| institute.trim() === "" || professional_status.trim() === "") {
             document.getElementById("loader").style.display = "none";
             error_show("Please fill all the fields");
           } else {
-            if (parseInt(contact_number) <= 9999999999) {
                   var jqxhr = $.ajax({
                     url: 'https://script.google.com/macros/s/AKfycbzoCzr5sfmADdKR1b6-VbPlEFJJPF2UafGTsX_IhMAr_WHjCcex/exec',
                     method: "GET",
                     dataType: "json",
                     data: {
-                      FullName: fullname,
-                      Gender: gender,
+                      Name: name,
                       Institute: institute,
-                      Program: courseofstudy,
-                      Year: year,
-                      ContactNumber: contact_number,
+                      Professional_Status: professional_status,
                       Timestamp: timestamp,
                       Email: email,
                     }
@@ -158,15 +153,6 @@
                     document.getElementById("loader").style.display = "none";
                     error_show("Your response has been recorded.");
                   });
-
-
-                }
-
-
-             else {
-               document.getElementById("loader").style.display = "none";
-              error_show("Please fill valid phone number");
-            }
           }
         }
 
