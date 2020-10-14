@@ -43,7 +43,6 @@
     </div>
     <hr>
     <div class="registrationText"> Please fill the below form (All fields are mandatory) </div> <br>
-    <form class="" action="sendMail.php" method="post">
     <div class="form-row ">
       <div class="form-group col-md-6"> <label> Name </label> <input name="name" id="name" type="text" class="form-control" placeholder="Name" required> </div>
       <div class="form-group col-md-6 "> <label for="email"> Email ID </label>
@@ -74,7 +73,6 @@
     </div> -->
     <br>
     <div class="form-group submit"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Submit </button> </div>
-    </form>
     <div id="loader">
       <div class="loader-wheel"></div>
     </div>
@@ -151,35 +149,35 @@
               Email: email,
             }
           })
-          .then(function(doRef) {
-            document.getElementById("loader").style.display = "none";
-            error_show("Your response has been recorded!!");
-            $("#name").val('');
-            $("#email").val('');
-            $('#institute').val('');
-            $('#professional_status').val('');
-          });
-          // var xmlhttp = new XMLHttpRequest();
-          // xmlhttp.onreadystatechange = function() {
-          //   if (this.readyState == 4 && this.status == 200) {
-          //     var response = this.responseText;
-          //     if (response == "done") {
-          //       document.getElementById("loader").style.display = "none";
-          //       error_show("Your response has been recorded!!");
-          //       $("#name").val('');
-          //       $("#email").val('');
-          //       $('#institute').val('');
-          //       $('#professional_status').val('');
-          //
-          //     } else {
-          //       document.getElementById("loader").style.display = "none";
-          //       //$(".alertSubscribeTop").html("Please try again");
-          //       error_show("Please try again");
-          //     }
-          //   }
-          // };
-          //xmlhttp.open("GET", "sendMail.php?name=" + name + "&email=" + email + "&institute=" + institute + "&professional_status=" + professional_status, true);
-          //xmlhttp.send();
+          // .then(function(doRef) {
+          //   document.getElementById("loader").style.display = "none";
+          //   error_show("Your response has been recorded!!");
+          //   $("#name").val('');
+          //   $("#email").val('');
+          //   $('#institute').val('');
+          //   $('#professional_status').val('');
+          // });
+           var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              var response = this.responseText;
+              if (response == "done") {
+                document.getElementById("loader").style.display = "none";
+                error_show("Your response has been recorded!!");
+                $("#name").val('');
+                $("#email").val('');
+                $('#institute').val('');
+                $('#professional_status').val('');
+
+              } else {
+                document.getElementById("loader").style.display = "none";
+                //$(".alertSubscribeTop").html("Please try again");
+                error_show("Please try again");
+              }
+            }
+          };
+          xmlhttp.open("GET", "sendMail.php?name=" + name + "&email=" + email + "&institute=" + institute + "&professional_status=" + professional_status, true);
+          xmlhttp.send();
         }
       }
 
