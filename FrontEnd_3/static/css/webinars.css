@@ -33,3 +33,17 @@ div.update-spacing{
     height: 50vh;
   }
 }
+
+.border-right {
+  border-right: 1px;
+}
+
+.register-btn {
+  background-color: #000b76;
+  border-color: #000b76;
+}
+
+.register-btn:hover {
+  background-color: #7600ff !important;
+  border-color: #7600ff !important;
+}
