@@ -57,6 +57,17 @@
   padding: 4%;
 }
 
+@media only screen and (max-width: 777px) {
+  .content {
+    margin: 1% 4%;
+  }
+
+  .btn {
+    width: 60%;
+  }
+}
+
+
 .card {
   border-radius: 1%;
 }
