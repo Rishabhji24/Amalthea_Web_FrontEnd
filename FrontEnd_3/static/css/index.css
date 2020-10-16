@@ -1036,6 +1036,10 @@ ul.mail li {
   }
 }
 
+button {
+  z-index: 0 !important;
+}
+
 .web {
   background-color: #ECF4FF;
   z-index: 5000;

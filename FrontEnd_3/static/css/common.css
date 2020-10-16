@@ -401,7 +401,7 @@ ul.social-network li, ul.mail li {
 @media only screen and (max-width: 777px) {
 
   body {
-    overflow-x: initial !important;
+    overflow-x: hidden !important;
   }
 
   .bottom-left {
