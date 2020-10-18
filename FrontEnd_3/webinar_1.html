@@ -12,6 +12,7 @@
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static\css\webinar_form.css">
   <link rel="stylesheet" href="static\css\webinars.css">
   <link rel="stylesheet" href="static\css\common.css">
   <!--Fonts-->
@@ -25,50 +26,10 @@
   <div class="site">
     <!--Done for responsivesness cause a mobile ignores the css for the body tags-->
     <!--Navbar-->
-    <header id="header" class="no-scroll">
-      <nav class="navbar navbar-expand fixed-top">
-        <div class="container-fluid">
-          <div id="hor-nav" class="row gradient">
-            <div class="col-lg-1 col-md-4 col-sm-12 nav-col img-col">
-              <input id="img-btn" class="img-btn btn" type="image" src="static/images/logo_white.svg" name="" value="">
-            </div>
-            <div class="col-lg-1 col-md-4 col-sm-12 nav-col">
-              <a href="index.html" role="button" class="btn nav-btn">Home</a>
-            </div>
-            <div class="col-lg-1 col-md-4 col-sm-12 nav-col">
-              <a href="events.html" role="button" class="btn nav-btn">Events</a>
-            </div>
-            <div class="col-lg-1 col-md-4 col-sm-12 nav-col">
-              <a href="webinars.html" role="button" class="btn nav-btn">Webinars</a>
-            </div>
-            <div style="margin-right:0px;" class="col-lg-3 col-md-4 col-sm-12 nav-col">
-              <a href="amalthea_project.html" role="button" class="btn nav-btn">Amalthea Project</a>
-            </div>
-            <div style="margin-left:0px; margin-right:0px;" class="col-lg-2 col-md-4 col-sm-12 nav-col">
-              <a href="past-sites.html" role="button" class="btn nav-btn">Past Sites</a>
-            </div>
-            <div class="col-lg-1 col-md-4 col-sm-12 nav-col">
-              <a href="contact.html" role="button" class="btn nav-btn">Contact</a>
-            </div>
-            <!-- <div class="col-lg-2 col-md-4 col-sm-12 nav-col">
-              <button type="button" class="btn btn-primary nav-btn">Login</button>
-            </div> -->
-          </div>
-        </div>
-        <div class="dropdown">
-          <a class="login" href="#">
-            <span class="fa-stack">
-              <i class="fas fa-user"></i>
-              <i class="fas fa-caret-down"></i>
-            </span>
-          </a>
-          <div class="dropdown-content">
-            <a href="#">Log in</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <br><br><br><br>
+    <div class="back">
+      <a href="webinars.html"><i class="fas fa-arrow-circle-left fa-2x"></i></a>
+    </div>
+    <br><br>
 
     <!--Webinar 1 Info-->
     <div class="box1">
@@ -85,9 +46,9 @@
           At the dawn of the Amalthea Webinar Series, we are delighted to announce our first speaker, Mathangi Sri, a leading Data Scientist in India, with 11 patent grants and 20+ patents in her field. She has served as head of Data Science at PhonePe and VP at NextGen Solutions. She has also built teams for data science at CitiBank, HSBC, and GE.
           <br><br>
           Join us on 30th October, from 6-7 PM, and mine into the field to get a clear visualization by registering from the link in the bio! You can also catch us live on Amalthea's YouTube channel, so don't forget to subscribe and hit the bell!
-          
+
           <br><br>
-          <a class="btn btn-primary register-btn" href="webinar_form.html" role="button">Register Now</a>
+          <a class="btn btn-primary register-btn more-btn" href="webinar_form.html" role="button">Register Now</a>
         </div>
       </div>
     </div>
@@ -119,7 +80,7 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 bottom-right-3" id="Social">
           <ul class="social-network social-circle">
-          <li><a href = "" class = "email" target = "_blank"><i class="fa fa-envelope"></i></a></li>
+          <li><a href = "mailto:amalthea@iitgn.ac.in" class = "email" target = "_blank"><i class="fa fa-envelope"></i></a></li>
           <!-- <li> <a href = "" class = "phone" target = "_blank"><i class="fa fa-mobile-alt"></i></a></li> -->
           </ul>
       </div>

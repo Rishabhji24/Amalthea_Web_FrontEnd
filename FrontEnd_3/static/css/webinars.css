@@ -51,6 +51,9 @@ div.webinarsboxes{
   }
 }
 
+.btn-right {
+  margin-left: 10px;
+}
 
 div.update-spacing{
   height: 30vh;

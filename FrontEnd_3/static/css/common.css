@@ -402,7 +402,7 @@ ul.social-network li, ul.mail li {
 @media only screen and (max-width: 777px) {
 
   body {
-    overflow-x: hidden !important;
+    overflow-x: initial !important;
   }
 
   .bottom-left {
