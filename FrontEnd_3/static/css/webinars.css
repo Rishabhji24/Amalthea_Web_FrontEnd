@@ -9,7 +9,6 @@ div.box1 {
 }
 
 h1.box-heading {
-  /*font-family: 'Inter', sans-serif;*/
   font-size: 35px;
   font-weight: bold;
   color: #454B69;
@@ -18,11 +17,40 @@ h1.box-heading {
 
 div.box-text {
   margin-top: 4px;
-  /*font-family: 'Inter', sans-serif;*/
   font-weight: normal;
   font-size: 16px;
   color: #0c0f12;
 }
+
+/*Webinar boxes*/
+div.webinar-box1 {
+  padding: 25px;
+  box-shadow: 0px 5px 5px rgba(0, 100, 255, 0.1);
+  background: #fff;
+  border-radius: 15px;
+}
+
+div.webinarsboxes{
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+@media only screen and (max-width: 666px) {
+  div.img{
+    width: 73vw;
+  }
+
+  div.webinarsboxes{
+    margin-left: 8vw;
+    margin-right: 8vw !important;
+  }
+
+  div.webinar-box1 {
+    padding: 6vw;
+    width: 85vw;
+  }
+}
+
 
 div.update-spacing{
   height: 30vh;
