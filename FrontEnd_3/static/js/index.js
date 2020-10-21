@@ -4,7 +4,7 @@
 //   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 // }
 function submitForm() {
-  document.getElementById("text").style.bottom = "0";
+  document.getElementById("text").style.bottom = "2vw";
   document.getElementById("loader").style.display = "block";
   var name = $("#name").val();
   var email = $("#email").val();
