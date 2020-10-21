@@ -33,3 +33,20 @@ div.update-spacing{
     height: 50vh;
   }
 }
+
+.card {
+  margin: 10%;
+  border-radius: 10px;
+}
+
+.card-link {
+  background-color: #000b76;
+  color: white;
+  border-radius: 10px;
+  width: 30%;
+  font-weight: bolder;
+}
+
+.card-link:hover {
+  background-color: #313ca7 !important;
+}
