@@ -4,17 +4,20 @@
 //   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 // }
 function submitForm() {
+  document.getElementById("text").style.bottom = "0";
   document.getElementById("loader").style.display = "block";
   var name = $("#name").val();
   var email = $("#email").val();
   var timestamp = new Date().toLocaleString();
   if (email === null || name === null) {
     document.getElementById("loader").style.display = "none";
+    document.getElementById("text").style.bottom = "-4vw";
     error_show("Please fill all the fields");
   } else {
 
     if (email.trim() === "" || name.trim() === "") {
       document.getElementById("loader").style.display = "none";
+      document.getElementById("text").style.bottom = "-4vw";
       error_show("Please fill all the fields");
     } else {
       var jqxhr = $.ajax({
@@ -28,6 +31,7 @@ function submitForm() {
         }
       })
       .then(function(doRef) {
+        document.getElementById("text").style.bottom = "-4vw";
         document.getElementById("loader").style.display = "none";
         error_show("Your response has been recorded!!");
         $("#name").val('');
