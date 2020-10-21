@@ -44,9 +44,9 @@
     <hr>
    <br>
     <div class="form-row ">
-      <div class="form-group col-md-6"> <label> Name* </label> <input name="name" id="name" type="text" class="form-control" placeholder="Name" required> </div>
+      <div class="form-group col-md-6"> <label> Name* </label> <input name="name" id="name_" type="text" class="form-control" placeholder="Name" required> </div>
       <div class="form-group col-md-6 "> <label for="email"> Email ID* </label>
-        <div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email ID" required> </div>
+        <div class="input-group "> <input type="email" name="email" id="email_" class="form-control" placeholder="Email ID" required> </div>
       </div>
       <!-- <div class="form-group col-md-6 "> <label for="gender"> Gender </label> <select name="gender" id="gender" class="form-control" required>
           <option value="" disabled selected style="display: none">--Please select an option--</option>
@@ -55,9 +55,9 @@
           <option>Other</option>
         </select> </div> -->
     </div>
-    <div class="form-group"> <label> Organization/ Institution* </label> <input name="institute" id="institute" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div>
+    <div class="form-group"> <label> Organization/ Institution* </label> <input name="institute" id="institute_" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div>
     <div class="form-row">
-      <div class="form-group col-md-6 "> <label for="professional_status"> Professional Status* </label> <select id="professional_status" name="professional_status" class="form-control" required>
+      <div class="form-group col-md-6 "> <label for="professional_status"> Professional Status* </label> <select id="professional_status_" name="professional_status" class="form-control" required>
           <option value="" disabled selected style="display: none">--Please select an option--</option>
           <option value="Student">Student</option>
           <option value="Faculty">Faculty</option>
@@ -72,13 +72,13 @@
       <div class="form-group col-md-6 "> <label for="contact_number"> Contact Number </label> <input type="text" name="contact_number" id="contact_number" class="form-control" placeholder="Contact" pattern="[0-9]{10}" required> </div>
     </div> -->
     <br>
-    <div class="form-group submit"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Submit </button> </div>
-    <div id="loader">
-      <div class="loader-wheel"></div>
+    <div class="form-group submit"> <button type="submit" id="btnsbt_" onclick="_submitForm()" class="btn btn-info_"> Submit </button> </div>
+    <div id="loader_">
+      <div class="loader-wheel_"></div>
     </div>
   </div>
 
-  <div id="snackbar"></div>
+  <div id="snackbar_"></div>
   <!--Footer-->
   <div class="footer">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -87,6 +87,20 @@
       </path>
     </svg>
     <div class="white">
+      <div class="bottom-top-text" id="text">
+        Subscribe For Updates
+      </div>
+      <div class="form-row bottom-top">
+        <div class="form-group col-md-3"> <input name="name" id="name" type="text" class="form-control" placeholder="Name" required> </div>
+        <div class="form-group col-md-3">
+          <div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email ID" required> </div>
+        </div>
+        <div class="form-group submit col-md-3"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Subscribe <i class="fas fa-paper-plane"></i></button> </div>
+        <div class="col-md-1" id="loader">
+          <div class="loader-wheel">
+          </div>
+        </div>
+      </div>
       <div class="bottom-left">
         Follow us on
       </div>
@@ -113,6 +127,7 @@
       </div>
     </div>
   </div>
+  <div id="snackbar"></div>
 
   <!--Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -121,20 +136,20 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript">
     // var innerHTML = '<div><h2>REGISTER FOR THE WEBINAR</h2></div><hr><div class="registrationText"> Please fill the below form (All fields are mandatory) </div> <br><div class="form-row "><div class="form-group col-md-6"> <label> Full Name </label> <input name="fullname" id="fullname" type="text" class="form-control" placeholder="Full Name" required> </div><div class="form-group col-md-6 "> <label for="gender"> Gender </label> <select name="gender" id="gender" class="form-control" required><option value="" disabled selected style="display: none">--Please select an option--</option><option>Male</option><option>Female</option><option>Other</option></select> </div></div><div class="form-group"> <label> Institute Name & Address </label> <input name="institute" id="institute" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div><div class="form-row"><div class="form-group col-md-6 "> <label for="courseofstudy"> Program </label> <select id="courseofstudy" name="courseofstudy" class="form-control" required><option value="" disabled selected style="display: none">--Please select an option--</option><option value="Bachelors">Bachelors</option><option value="Masters">Masters</option><option value="Doctorate">Doctorate</option><option value="Other">Other</option></select> </div><div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div></div><div class="form-row "><div class="form-group col-md-6 "> <label for="email"> Mail ID </label><div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email" required> </div></div><div class="form-group col-md-6 "> <label for="contact_number"> Contact Number (WhatsApp) </label> <input type="text" name="contact_number" id="contact_number" class="form-control" pattern="[0-9]{10}" required> </div></div><br><br><div class="form-group submit"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Submit </button> </div>';
-    function submitForm() {
-      document.getElementById("loader").style.display = "block";
-      var name = $("#name").val();
-      var email = $("#email").val();
-      var institute = $("#institute").val();
-      var professional_status = $("#professional_status").val();
+    function _submitForm() {
+      document.getElementById("loader_").style.display = "block";
+      var name = $("#name_").val();
+      var email = $("#email_").val();
+      var institute = $("#institute_").val();
+      var professional_status = $("#professional_status_").val();
       var timestamp = new Date().toLocaleString();
       if (email === null || name === null || institute === null || professional_status === null) {
-        document.getElementById("loader").style.display = "none";
+        document.getElementById("loader_").style.display = "none";
         error_show("Please fill all the fields");
       } else {
 
         if (email.trim() === "" || name.trim() === "" || institute.trim() === "" || professional_status.trim() === "") {
-          document.getElementById("loader").style.display = "none";
+          document.getElementById("loader_").style.display = "none";
           error_show("Please fill all the fields");
         } else {
           var jqxhr = $.ajax({
@@ -150,12 +165,12 @@
             }
           })
           .then(function(doRef) {
-            document.getElementById("loader").style.display = "none";
+            document.getElementById("loader_").style.display = "none";
             error_show("Your response has been recorded!!");
-            $("#name").val('');
-            $("#email").val('');
-            $('#institute').val('');
-            $('#professional_status').val('');
+            $("#name_").val('');
+            $("#email_").val('');
+            $('#institute_').val('');
+            $('#professional_status_').val('');
           });
           //  var xmlhttp = new XMLHttpRequest();
           // xmlhttp.onreadystatechange = function() {
@@ -185,7 +200,7 @@
     }
 
     function error_show(e) {
-      var x = document.getElementById("snackbar");
+      var x = document.getElementById("snackbar_");
       x.innerHTML = e;
       x.className = "show";
       setTimeout(function() {
@@ -193,6 +208,7 @@
       }, 3000);
     }
   </script>
+  <script src="static/js/subscribe.js"></script>
 </body>
 
 </html>
