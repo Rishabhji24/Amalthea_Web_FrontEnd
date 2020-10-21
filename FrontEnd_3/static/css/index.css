@@ -1044,3 +1044,7 @@ button {
   background-color: #ECF4FF;
   z-index: 5000;
 }
+
+.crt-grid-carousel-stage {
+  border-radius: 2%;
+}
