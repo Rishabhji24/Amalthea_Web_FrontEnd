@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <div class="site" style = "background-color: darkblue;">
+  <div class="site">
     <!--Done for responsivesness cause a mobile ignores the css for the body tags-->
     <!--Navbar-->
     <header id="header" class="no-scroll">
@@ -69,10 +69,17 @@
       </nav>
     </header>
 
-    <br><br><br><br>
     <!--Event Logos Slideshow-->
     <div class="container-fluid">
       <div class="slideshow-container">
+        <div class="mySlides1">
+          <img class="event-slides" src="static/images/dcode.png">
+        </div>
+
+        <div class="mySlides1">
+          <img class="event-slides" src="static/images/electronica.png">
+        </div>
+
         <div class="mySlides1">
           <img class="event-slides" src="static/images/quickwitlogo.png">
         </div>
@@ -81,13 +88,6 @@
           <img class="event-slides" src="static/images/cryptorush.png">
         </div>
 
-        <div class="mySlides1">
-          <img class="event-slides" src="static/images/dcode.png">
-        </div>
-
-        <div class="mySlides1">
-          <img class="event-slides" src="static/images/electronica.png">
-        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -97,13 +97,40 @@
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
       </div>
     </div>
     <br>
 
-    <div class="container-fluid events-infoo" style = "background-color: #ECF4FF;">
+    <div class="container-fluid events-infoo">
       <div class="slideshow-container">
+        <!--Dcode-->
+        <div class="mySlides2">
+
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">About</h1>
+            <div class="row">
+              <div class="col-12 box-text">Quickwit is a short weekly online quiz conducted on our instagram handle <a href="https://www.instagram.com/amalthea_iitgn/"> @amalthea_iitgn</a>.
+                This quiz is conducted every Sunday at sharp 9pm having questions related to various fileds of science and technology.
+                It appreciates your accuracy as well as quick response and the leaderboard gets updated every week.
+                The top 10 contestents from the leaderboard get a shout out from our instagram handle every week.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--Electronica-->
+        <div class="mySlides2">
+
+          <br>
+          <div class="box1">
+            <h1 class="box-heading">Coming Soon</h1>
+          </div>
+
+        </div>
+
         <!--Quickwit-->
         <div class="mySlides2">
           <br>
@@ -178,25 +205,6 @@
           </div>
         </div>
 
-        <!--Dcode-->
-        <div class="mySlides2">
-
-          <br>
-          <div class="box1">
-            <h1 class="box-heading">Coming Soon</h1>
-          </div>
-
-        </div>
-
-        <!--Electronica-->
-        <div class="mySlides2">
-
-          <br>
-          <div class="box1">
-            <h1 class="box-heading">Coming Soon</h1>
-          </div>
-
-        </div>
       </div>
       <br>
     </div>
