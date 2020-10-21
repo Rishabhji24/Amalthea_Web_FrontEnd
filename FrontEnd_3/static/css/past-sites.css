@@ -50,3 +50,9 @@ div.update-spacing{
 .card-link:hover {
   background-color: #313ca7 !important;
 }
+
+.heading-sites {
+  padding-top: 1%;
+  font-weight: bolder;
+  text-align: center;
+}
