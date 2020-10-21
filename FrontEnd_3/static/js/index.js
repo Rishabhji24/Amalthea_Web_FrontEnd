@@ -15,7 +15,7 @@ function submitForm() {
   if (email === null || name === null) {
     document.getElementById("loader").style.display = "none";
     if (width < 700) {
-      document.getElementById("text").style.bottom = "2vw";
+      document.getElementById("text").style.bottom = "0";
     }
     error_show("Please fill all the fields");
   } else {
@@ -23,7 +23,7 @@ function submitForm() {
     if (email.trim() === "" || name.trim() === "") {
       document.getElementById("loader").style.display = "none";
       if (width < 700) {
-        document.getElementById("text").style.bottom = "2vw";
+        document.getElementById("text").style.bottom = "-0";
       }
       error_show("Please fill all the fields");
     } else {
@@ -39,7 +39,7 @@ function submitForm() {
       })
       .then(function(doRef) {
         if (width < 700) {
-          document.getElementById("text").style.bottom = "2vw";
+          document.getElementById("text").style.bottom = "0";
         }
         document.getElementById("loader").style.display = "none";
         if (doRef["row"] == "already_subscribed") {
