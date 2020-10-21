@@ -8,11 +8,9 @@ div.box1 {
   border-radius: 15px;
 }
 
-h1.box-heading {
-  font-size: 35px;
-  font-weight: bold;
+h1.box-heading1 {
   color: #454B69;
-  letter-spacing: -1px;
+  font-weight: 750;
 }
 
 div.box-text {
