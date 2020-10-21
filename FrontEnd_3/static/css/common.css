@@ -336,9 +336,7 @@ ul.social-network li, ul.mail li {
 }
 
 .social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
+  margin-top: 20%;
 }
 
 .social-circle li a:hover i,
