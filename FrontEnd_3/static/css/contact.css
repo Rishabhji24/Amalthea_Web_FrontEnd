@@ -54,6 +54,13 @@ div.update-spacing{
   border: #000b76 1px solid;
 }
 
+.contact-img {
+  width:  17vw;
+  height: 17vw;
+  background-size: cover;
+  border:1px solid #1C4193;                
+}
+
 .tag{
   position: absolute;
   background-color: #000b76;
@@ -62,4 +69,33 @@ div.update-spacing{
   border-radius: 5px;
   padding: 5px 15px;
   transform: translate(-50%, -20px);
+}
+
+@media only screen and (max-width: 777px) {
+  .contact-img {
+    width:  60vw;
+    height: 60vw;
+    background-size: cover;
+    border:1px solid #1C4193;                
+  }
+}
+
+@media only screen and (min-width: 778px) and (max-width: 988px) {
+  .contact-img {
+    width:  40vw;
+    height: 40vw;
+    background-size: cover;
+    border:1px solid #1C4193;                
+  }
+}
+
+
+.heading-sites {
+  padding-top: 1%;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #454B69;
+  letter-spacing: -1px;
 }
