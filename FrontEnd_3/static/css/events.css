@@ -434,3 +434,13 @@ div.box-text {
   /*font-family: 'Inter', sans-serif;*/
   color: #0c0f12;
 }
+
+.register-btn {
+  background-color: #000b76;
+  border-color: #000b76;
+}
+
+.register-btn:hover {
+  background-color: #7600ff !important;
+  border-color: #7600ff !important;
+}
