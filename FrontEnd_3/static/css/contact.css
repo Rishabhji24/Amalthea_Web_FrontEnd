@@ -33,3 +33,33 @@ div.update-spacing{
     height: 50vh;
   }
 }
+
+.contact{
+  text-align: center;
+  padding: 20px;
+}
+
+.name {
+  margin-top: 2vh;
+  font-weight: bolder;
+}
+
+.number {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.rounded-circle{
+  border: #000b76 1px solid;
+}
+
+.tag{
+  position: absolute;
+  background-color: #000b76;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  transform: translate(-50%, -20px);
+}
