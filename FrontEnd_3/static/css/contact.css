@@ -1,4 +1,29 @@
 /*Box*/
+.four-person {
+  padding: 2%;
+  padding-bottom: 1%;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  border-radius: 10px;
+}
+
+.one-person {
+  width: 76%;
+  padding: 5%;
+  padding-top: 10%;
+  padding-bottom: 1%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.last-col {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div.box1 {
   padding: 25px;
   box-shadow: 0px 5px 5px rgba(0, 100, 255, 0.1);
@@ -7,6 +32,16 @@ div.box1 {
   margin-right: 8vw;
   border-radius: 15px;
 }
+
+div.box2 {
+  padding: 25px;
+  box-shadow: 0px 5px 5px rgba(0, 100, 255, 0.1);
+  background: #fff;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  border-radius: 15px;
+}
+
 
 h1.box-heading {
   /*font-family: 'Inter', sans-serif;*/
@@ -34,9 +69,14 @@ div.update-spacing{
   }
 }
 
+.img {
+  padding: 6%;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 .contact{
   text-align: center;
-  padding: 20px;
 }
 
 .name {
