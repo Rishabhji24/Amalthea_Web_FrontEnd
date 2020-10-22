@@ -293,14 +293,6 @@ img.event-slides {
   width: 100vw;
 }
 
-@media only screen and (max-width: 777px) {
-  img.event-slides {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85vw;
-  }
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -316,6 +308,7 @@ div.container-fluid {
 
 /* Next & previous buttons */
 .prev, .next {
+  text-align: center;
   background-color: white;
   cursor: pointer;
   position: absolute;
@@ -345,7 +338,6 @@ div.container-fluid {
   .next {
     width: 30px;
     right: 0;
-    border-radius: 3px 0 0 3px;
     font-size: 16px;
   }
 
@@ -358,9 +350,9 @@ div.container-fluid {
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: hsl(226, 74%, 66%);
-  color: black;
+  transform: scale(1.2);
   text-decoration: none;
+  color: #000b76;
 }
 
 /* The dots/bullets/indicators */
