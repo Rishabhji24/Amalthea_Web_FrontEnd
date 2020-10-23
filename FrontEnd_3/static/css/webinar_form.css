@@ -131,3 +131,7 @@
     width: 40%;
   }
 }
+
+#referrel-code {
+  display: none;
+}

@@ -55,8 +55,8 @@
           <option>Other</option>
         </select> </div> -->
     </div>
-    <div class="form-group"> <label> Organization/ Institution* </label> <input name="institute" id="institute_" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div>
     <div class="form-row">
+      <div class="form-group col-md-6"> <label> Organization/ Institution* </label> <input name="institute" id="institute_" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div>
       <div class="form-group col-md-6 "> <label for="professional_status"> Professional Status* </label> <select id="professional_status_" name="professional_status" class="form-control" required>
           <option value="" disabled selected style="display: none">--Please select an option--</option>
           <option value="Student">Student</option>
@@ -65,8 +65,19 @@
           <option value="Working Professional">Working Professional</option>
           <option value="Others">Others</option>
         </select> </div>
-      <!-- <div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div> -->
     </div>
+
+      <div class="form-group"> <label for="reference"> From where did you get to know about this webinar? </label> <select id="reference_" name="reference" class="form-control" onchange="CheckCA(this.value);">
+          <option value="" disabled selected style="display: none">--Please select an option--</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Campus Ambassador Program">Campus Ambassador Program</option>
+          <option value="E-Mail">E-Mail</option>
+          <option value="Peers">Peers</option>
+          <option value="Others">Others</option>
+        </select> </div>
+        <div class="form-group" id="referrel-code"> <label> Referrel Code </label> <input name="referrel_code" id="referrel_code_" class="form-control" placeholder="Referrel Code"> </div>
+      <!-- <div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div> -->
+
     <!-- <div class="form-row ">
 
       <div class="form-group col-md-6 "> <label for="contact_number"> Contact Number </label> <input type="text" name="contact_number" id="contact_number" class="form-control" placeholder="Contact" pattern="[0-9]{10}" required> </div>
@@ -135,6 +146,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript">
+
+    function CheckCA(val) {
+      var element = document.getElementById("referrel-code");
+      if (val == "Campus Ambassador Program") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+
     // var innerHTML = '<div><h2>REGISTER FOR THE WEBINAR</h2></div><hr><div class="registrationText"> Please fill the below form (All fields are mandatory) </div> <br><div class="form-row "><div class="form-group col-md-6"> <label> Full Name </label> <input name="fullname" id="fullname" type="text" class="form-control" placeholder="Full Name" required> </div><div class="form-group col-md-6 "> <label for="gender"> Gender </label> <select name="gender" id="gender" class="form-control" required><option value="" disabled selected style="display: none">--Please select an option--</option><option>Male</option><option>Female</option><option>Other</option></select> </div></div><div class="form-group"> <label> Institute Name & Address </label> <input name="institute" id="institute" class="form-control" placeholder="Ex: IIT Gandhinagar, Palaj, Gandhinagar, Gujarat" required> </div><div class="form-row"><div class="form-group col-md-6 "> <label for="courseofstudy"> Program </label> <select id="courseofstudy" name="courseofstudy" class="form-control" required><option value="" disabled selected style="display: none">--Please select an option--</option><option value="Bachelors">Bachelors</option><option value="Masters">Masters</option><option value="Doctorate">Doctorate</option><option value="Other">Other</option></select> </div><div class="form-group col-md-6 "> <label for="year"> Graduating Year </label> <input type="number" name="year" id="year" min="2019" max="2026" class="form-control" placeholder="Ex: 2021" required> </div></div><div class="form-row "><div class="form-group col-md-6 "> <label for="email"> Mail ID </label><div class="input-group "> <input type="email" name="email" id="email" class="form-control" placeholder="Email" required> </div></div><div class="form-group col-md-6 "> <label for="contact_number"> Contact Number (WhatsApp) </label> <input type="text" name="contact_number" id="contact_number" class="form-control" pattern="[0-9]{10}" required> </div></div><br><br><div class="form-group submit"> <button type="submit" id="btnsbt" onclick="submitForm()" class="btn btn-info"> Submit </button> </div>';
     function _submitForm() {
       document.getElementById("loader_").style.display = "block";
@@ -142,6 +163,8 @@
       var email = $("#email_").val();
       var institute = $("#institute_").val();
       var professional_status = $("#professional_status_").val();
+      var reference = $("#reference_").val();
+      var referrel_code = $("#referrel_code_").val();
       var timestamp = new Date().toLocaleString();
       if (email === null || name === null || institute === null || professional_status === null) {
         document.getElementById("loader_").style.display = "none";
@@ -162,6 +185,8 @@
               Professional_Status: professional_status,
               Timestamp: timestamp,
               Email: email,
+              Reference: reference,
+              Referrel_code: referrel_code
             }
           })
           .then(function(doRef) {
@@ -171,6 +196,8 @@
             $("#email_").val('');
             $('#institute_').val('');
             $('#professional_status_').val('');
+            $('#reference_').val('');
+            $('#referrel_code_').val('');
           });
           //  var xmlhttp = new XMLHttpRequest();
           // xmlhttp.onreadystatechange = function() {
