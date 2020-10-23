@@ -213,18 +213,19 @@ nav.navbar {
   position: relative;
   display: inline-block;
   width: 60px;
+  right: -10%;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  background-color: #000b76;
+  margin-left: -20%;
   display: none;
   position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
-  margin-top: 4px;
+  background-color: #000b76;
 }
 
 /* Links inside the dropdown */
@@ -244,6 +245,10 @@ nav.navbar {
   .dropdown-content a:hover:after {
     width: 50%;
     left: 6%;
+  }
+
+  .dropdown-content {
+    margin-left: -140%;
   }
 }
 

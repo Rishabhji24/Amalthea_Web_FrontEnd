@@ -459,7 +459,6 @@ nav.navbar {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  margin-top: 10%;
   margin-left: -20%;
   display: none;
   position: absolute;
