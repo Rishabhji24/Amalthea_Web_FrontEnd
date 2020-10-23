@@ -458,15 +458,15 @@ nav.navbar {
   }
 
   .home {
-    margin-right:-1% !important;
+    margin-right:-1.5% !important;
   }
 
   .events {
-    margin-right:-0.9% !important;
+    margin-right:-1% !important;
   }
 
   .webinars {
-    margin-right:-5.5% !important;
+    margin-right:-5% !important;
   }
 
   .project {
@@ -478,7 +478,7 @@ nav.navbar {
   }
 }
 
-@media only screen and (min-width: 990px) and (max-width:1300px) {
+@media only screen and (min-width: 992px) and (max-width:1300px) {
   .nav-btn1:hover:after {
     width: 65%;
     left: 40%;
@@ -508,6 +508,7 @@ nav.navbar {
 
   .project a{
     margin-left: 1% !important;
+    margin-right: 1% !important;
   }
 
   .psite {
