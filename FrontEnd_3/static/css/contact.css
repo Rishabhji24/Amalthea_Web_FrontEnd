@@ -90,11 +90,25 @@ div.update-spacing{
   font-family: 'Quicksand', sans-serif;
 }
 
+.break {
+  display: none;
+}
+
+@media only screen and (max-width: 777px) {
+  .break {
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+  }
+}
+
 .rounded-circle{
   border: #000b76 1px solid;
 }
 
 .contact-img {
+  margin-top: 6%;
   background-size: cover;
   border:1px solid #1C4193;
 }
