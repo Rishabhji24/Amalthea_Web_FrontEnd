@@ -1,25 +1,16 @@
 function submitForm() {
   var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  if (width < 700) {
-    document.getElementById("text").style.bottom = "2vw";
-  }
   document.getElementById("loader").style.display = "block";
   var name = $("#name").val();
   var email = $("#email").val();
   var timestamp = new Date().toLocaleString();
   if (email === null || name === null) {
     document.getElementById("loader").style.display = "none";
-    if (width < 700) {
-      document.getElementById("text").style.bottom = "-4vw";
-    }
     error_show("Please fill all the fields");
   } else {
 
     if (email.trim() === "" || name.trim() === "") {
       document.getElementById("loader").style.display = "none";
-      if (width < 700) {
-        document.getElementById("text").style.bottom = "-4vw";
-      }
       error_show("Please fill all the fields");
     } else {
       var jqxhr = $.ajax({
@@ -33,9 +24,6 @@ function submitForm() {
         }
       })
       .then(function(doRef) {
-        if (width < 700) {
-          document.getElementById("text").style.bottom = "-4vw";
-        }
         document.getElementById("loader").style.display = "none";
         if (doRef["row"] == "already_subscribed") {
           error_show("You have already subscribed!");
