@@ -3,6 +3,11 @@
 // for (let i = 0; i < logo.length; i++) {
 //   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 // }
+
+// var video = document.getElementById("theme-video");
+// video.muted = !video.muted;
+// video.play();
+
 document.getElementById("logo1").style.display = "none";
 document.getElementById("logo2").style.display = "none";
 // document.querySelector("svg").onload = function() {

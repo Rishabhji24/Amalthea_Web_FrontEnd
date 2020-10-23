@@ -43,6 +43,19 @@ h6 {
   font-weight: 800;
 }
 
+.theme_video {
+  padding: 4%;
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 777px) {
+  .theme_video {
+    margin-top: 4%;
+    height: 100%;
+  }
+}
 
 .hr-line {
   height: 3px;
@@ -660,9 +673,6 @@ div.box1 {
 }
 
 @media only screen and (max-width: 777px) {
-  .text {
-    display: none;
-  }
 
   .hr-line {
     display: none;
