@@ -9,7 +9,7 @@ document.getElementById("img-btn").onclick = function() {
     if (width < 768) {
       nav.style.height = "80%";
     } else if (width >= 768 && width < 992) {
-      nav.style.height = "200px";
+      nav.style.height = "300px";
     } else if (width < 1302) {
       nav.style.height = "150px";
     } else if (width >= 1302 && width < 1340) {
