@@ -16,7 +16,7 @@
   margin-right: auto;
 }
 
-@media only screen and (min-width: 692px) {
+@media only screen and (min-width: 768px) {
   .left {
     margin-right: 0;
     border-radius: 10px 0 0 10px;
