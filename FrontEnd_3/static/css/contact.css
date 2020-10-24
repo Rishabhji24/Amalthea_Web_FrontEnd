@@ -17,6 +17,14 @@
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1370px) {
+  .stag {
+    font-size: 12px !important;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .left {
     margin-right: 0;
