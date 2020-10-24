@@ -292,7 +292,7 @@ header {
 }
 
 .scroll .fa-stack {
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 .scroll .fa-user,
@@ -302,7 +302,7 @@ header {
 
 .no-scroll .fa-user,
 .no-scroll .fa-caret-down {
-  color: #000b76;
+  color: #132b63;
 }
 
 .fixed-top {
@@ -332,7 +332,7 @@ header {
 }
 
 .no-scroll .nav-btn {
-  color: #000b76;
+  color: #132b63;
 }
 
 .btn:hover {
@@ -345,7 +345,7 @@ header {
 }
 
 .no-scroll .btn:hover {
-  color: #000b76;
+  color: #132b63;
 }
 
 .btn:focus,
@@ -385,7 +385,7 @@ nav.navbar {
 }
 
 .scroll #hor-nav {
-  background: #000b76;
+  background: #132b63;
 }
 
 .no-scroll #hor-nav {
@@ -436,7 +436,7 @@ nav.navbar {
 
 .no-scroll .nav-btn:after,
 .no-scroll .dropdown-content a:after {
-  background: #000b76;
+  background: #132b63;
 }
 
 .nav-btn:hover:after {
@@ -554,7 +554,7 @@ nav.navbar {
 }
 
 .scroll .dropdown-content {
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 /* Links inside the dropdown */
@@ -580,7 +580,7 @@ nav.navbar {
 }
 
 .no-scroll .dropdown-content a {
-  color: #000b76;
+  color: #132b63;
 }
 
 .scroll .dropdown-content a {
@@ -946,21 +946,21 @@ ul.mail li {
 }
 
 .social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
+  background-color: #0e76a8;
 }
 
 .social-network a.icoYoutube:hover,
 .social-network a.email:hover {
-  background-color: #ff003a;
+  background-color: #c4302b;
 }
 
 .social-network a.icoInstagram:hover {
-  background-color: #ff1493;
+  background-color: #bc2a8d;
 }
 
 .social-network a.icoTwitter:hover,
 .social-network a.phone:hover {
-  background-color: #007bb7;
+  background-color: #00acee;
 }
 
 .social-network a.icoFacebook:hover i,
@@ -1020,7 +1020,7 @@ ul.mail li {
 }
 
 .footer-row {
-  background-color: #000b76;
+  background-color: #132b63;
   text-align: center;
 }
 
@@ -1051,14 +1051,15 @@ ul.mail li {
 .btn-info {
   border-radius: 16px;
   width: 50%;
-  background-color: #0a7600;
-  border-color: #0a7600;
+  background-color: white;
+  border-color: white;
+  color: #132b63;
 }
 
 .btn-info:hover {
-  background-color: white;
-  border-color: white;
-  color: #000b76;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: white;
 }
 
 .theme-fixed {
