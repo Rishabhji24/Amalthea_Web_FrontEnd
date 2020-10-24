@@ -62,7 +62,7 @@ header {
 }
 
 .scroll .fa-stack {
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 .scroll .fa-user,
@@ -72,7 +72,7 @@ header {
 
 .no-scroll .fa-user,
 .no-scroll .fa-caret-down {
-  color: #000b76;
+  color: #132b63;
 }
 
 .fixed-top {
@@ -102,7 +102,7 @@ header {
 }
 
 .no-scroll .nav-btn {
-  color: #000b76;
+  color: #132b63;
 }
 
 .btn:hover {
@@ -115,7 +115,7 @@ header {
 }
 
 .no-scroll .btn:hover {
-  color: #000b76;
+  color: #132b63;
 }
 
 .btn:focus,
@@ -155,7 +155,7 @@ nav.navbar {
 }
 
 .scroll #hor-nav {
-  background: #000b76;
+  background: #132b63;
 }
 
 .no-scroll #hor-nav {
@@ -206,7 +206,7 @@ nav.navbar {
 
 .no-scroll .nav-btn:after,
 .no-scroll .dropdown-content a:after {
-  background: #000b76;
+  background: #132b63;
 }
 
 .nav-btn:hover:after {
@@ -241,7 +241,7 @@ nav.navbar {
 }
 
 .scroll .dropdown-content {
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 /* Links inside the dropdown */
@@ -263,7 +263,7 @@ nav.navbar {
 }
 
 .no-scroll .dropdown-content a {
-  color: #000b76;
+  color: #132b63;
 }
 
 .scroll .dropdown-content a {
@@ -316,7 +316,7 @@ div.container-fluid {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #000b76;
+  color: #132b63;
   font-weight: bolder;
   font-size: 28px;
   transition: 0.6s ease;
@@ -353,7 +353,7 @@ div.container-fluid {
 .prev:hover, .next:hover {
   transform: scale(1.2);
   text-decoration: none;
-  color: #000b76;
+  color: #132b63;
 }
 
 /* The dots/bullets/indicators */
@@ -364,13 +364,13 @@ div.container-fluid {
   margin: 0 2px;
   background-color: #ffffff;
   border-radius: 50%;
-  border: 2px solid #000b76;
+  border: 2px solid #132b63;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 /*Sliding Animations*/
@@ -436,8 +436,8 @@ div.box-text {
 }
 
 .register-btn {
-  background-color: #000b76;
-  border-color: #000b76;
+  background-color: #132b63;
+  border-color: #132b63;
 }
 
 .register-btn:hover {

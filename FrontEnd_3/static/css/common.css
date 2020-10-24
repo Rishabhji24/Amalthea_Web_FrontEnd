@@ -88,7 +88,7 @@ header {
 }
 
 .fa-stack {
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 .fa-user, .fa-caret-down {
@@ -151,7 +151,7 @@ nav.navbar {
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0, 1, 0.58, 1);
   overflow: hidden;
-  background: #000b76;
+  background: #132b63;
   /*background: rgb(2,0,36);
     background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(94,94,225,0.98) 29%, rgba(0,212,255,1) 100%);*/
   border-radius: 30px;
@@ -303,7 +303,7 @@ nav.navbar {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
-  background-color: #000b76;
+  background-color: #132b63;
 }
 
 /* Links inside the dropdown */
@@ -451,7 +451,7 @@ ul.social-network li, ul.mail li {
 }
 
 .footer-row {
-  background-color: #000b76;
+  background-color: #132b63;
   text-align: center;
 }
 
@@ -489,7 +489,7 @@ ul.social-network li, ul.mail li {
 .btn-info:hover {
   background-color: white;
   border-color: white;
-  color: #000b76;
+  color: #132b63;
 }
 
 #snackbar {
