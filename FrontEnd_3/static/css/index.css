@@ -1051,14 +1051,15 @@ ul.mail li {
 .btn-info {
   border-radius: 16px;
   width: 50%;
-  background-color: #0a7600;
-  border-color: #0a7600;
-}
-
-.btn-info:hover {
   background-color: white;
   border-color: white;
   color: #132b63;
+}
+
+.btn-info:hover {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: white;
 }
 
 .theme-fixed {
