@@ -383,11 +383,11 @@ ul.social-network li, ul.mail li {
 }
 
 .social-network a.icoYoutube:hover, .social-network a.email:hover {
-  background-color: #ff003a;
+  background-color: #c4302b;
 }
 
 .social-network a.icoInstagram:hover {
-  background-color: #ff1493;
+  background-color: #bc2a8d;
 }
 
 .social-network a.icoTwitter:hover, .social-network a.phone:hover {
