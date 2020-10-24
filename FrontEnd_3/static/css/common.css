@@ -469,6 +469,10 @@ ul.social-network li, ul.mail li {
   margin-right: auto;
 }
 
+.padding-top {
+  padding-top: 2%;
+}
+
 @media only screen and (min-width: 992px) {
   .margin-left {
     margin-left: 15%;
