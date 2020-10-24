@@ -1,13 +1,13 @@
 div.update-spacing{
     height: 10vh;
   }
-  
+
 @media only screen and (max-width: 777px) {
   div.update-spacing{
     height: 50vh;
   }
 }
-  
+
 .heading-sites {
   padding-top: 1%;
   font-weight: bolder;
