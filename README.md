@@ -1,6 +1,6 @@
 # Amalthea 2020
 
-Front-End of the Amalthea 2020 website. Hosted on https:amalthea.iitgn.ac.in
+Front-End of the Amalthea 2020 website. Hosted on https://amalthea.iitgn.ac.in
 
 Following are the links to the different designs we tried for the website. We finally settled on the 3rd iteration :)
 
