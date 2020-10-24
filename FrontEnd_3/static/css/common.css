@@ -379,7 +379,7 @@ ul.social-network li, ul.mail li {
 }
 
 .social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
+  background-color: #0e76a8;
 }
 
 .social-network a.icoYoutube:hover, .social-network a.email:hover {
@@ -391,7 +391,7 @@ ul.social-network li, ul.mail li {
 }
 
 .social-network a.icoTwitter:hover, .social-network a.phone:hover {
-  background-color: #007bb7;
+  background-color: #00acee;
 }
 
 .social-network a.icoFacebook:hover i,
