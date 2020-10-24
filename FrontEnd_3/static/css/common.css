@@ -482,14 +482,15 @@ ul.social-network li, ul.mail li {
 .btn-info {
   border-radius: 16px;
   width: 50%;
-  background-color: #0a7600;
-  border-color: #0a7600;
-}
-
-.btn-info:hover {
   background-color: white;
   border-color: white;
   color: #132b63;
+}
+
+.btn-info:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
 }
 
 #snackbar {
