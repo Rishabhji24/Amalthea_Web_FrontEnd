@@ -199,6 +199,15 @@
               error_show("Please provide valid Email Id!");
             } else {
               error_show("Your response has been recorded!!");
+              var jqxhr = $.ajax({
+                url: 'https://script.google.com/macros/s/AKfycbzhqcwEB2u83IcFrmEiJpnMc7i8ypW9Pl5LU5_unH4jMtxdaVs/exec',
+                method: "GET",
+                dataType: "json",
+                data: {
+                  Column: "2",
+                  Referrel_code: referrel_code
+                }
+              });
             }
             $("#name_").val('');
             $("#email_").val('');
