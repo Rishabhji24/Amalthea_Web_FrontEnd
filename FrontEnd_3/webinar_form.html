@@ -193,7 +193,13 @@
           })
           .then(function(doRef) {
             document.getElementById("loader_").style.display = "none";
-            error_show("Your response has been recorded!!");
+            if (doref["row"] == "Already_Registered") {
+              error_show("You have already registered!");
+            } else if (dofer["row"] == "Invalid") {
+              error_show("Please provide valid Email Id!");
+            } else {
+              error_show("Your response has been recorded!!");
+            }
             $("#name_").val('');
             $("#email_").val('');
             $('#institute_').val('');

@@ -27,6 +27,8 @@ function submitForm() {
         document.getElementById("loader").style.display = "none";
         if (doRef["row"] == "already_subscribed") {
           error_show("You have already subscribed!");
+        } else if (doRef["row"] == "Invalid") {
+          error_show("Please provide valid Email Id!");
         } else {
           error_show("Thanks for subscribing!");
         }
