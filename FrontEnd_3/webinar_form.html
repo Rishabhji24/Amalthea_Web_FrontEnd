@@ -193,9 +193,9 @@
           })
           .then(function(doRef) {
             document.getElementById("loader_").style.display = "none";
-            if (doref["row"] == "Already_Registered") {
+            if (doRef["row"] === "Already_Registered") {
               error_show("You have already registered!");
-            } else if (dofer["row"] == "Invalid") {
+            } else if (doRef["row"] === "Invalid") {
               error_show("Please provide valid Email Id!");
             } else {
               error_show("Your response has been recorded!!");
