@@ -19,7 +19,9 @@ document.getElementById("img-btn").onclick = function() {
     } else {
       nav.style.height = "60px";
     }
-    nav.style.overflow = "visible";
+    setTimeout(function(){
+      nav.style.overflow = "visible";
+    }, 500);
   } else {
     var nav = document.getElementById("hor-nav");
     nav.style.overflow = "hidden";
