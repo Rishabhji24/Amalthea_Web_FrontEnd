@@ -432,11 +432,11 @@ nav.navbar {
 }
 
 .dropdown-content2 .project-hline:after {
-  bottom: 280px;
+  bottom: 300px;
 }
 
 .dropdown-content2 .symp-hline:after {
-  bottom: 210px;
+  bottom: 240px;
 }
 
 .dropdown-content2 .ca-hline:after {
