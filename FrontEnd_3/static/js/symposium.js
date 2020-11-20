@@ -31,7 +31,6 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var x1 = document.getElementsByClassName(slideId[0]);
-    var x2 = document.getElementsByClassName(slideId[1]);
     var dots = document.getElementsByClassName("dot");
 
     if (n > x1.length) {
@@ -42,14 +41,12 @@ function showSlides(n) {
     }
     for (i = 0; i < x1.length; i++) {
         x1[i].style.display = "None";
-        x2[i].style.display = "None";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     //slideIndexo++;
     x1[slideIndex[0]-1].style.display = "block";
-    x2[slideIndex[0]-1].style.display = "block";
     dots[slideIndex[0]-1].className += " active";
 }
 
